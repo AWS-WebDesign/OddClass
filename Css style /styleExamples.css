@@ -1,0 +1,61 @@
+/* Style Examples */
+/* By Mr. Considine */
+
+body {
+
+  margin: 0;
+  padding: 0;
+  /* align-items: center; */
+
+  /*background possibilities*/
+  background: #EEE;
+  background-image: url(https://g.foolcdn.com/editorial/images/144851/cow_and_calf.jpg);
+  /* background-color: */
+  background-position: right top;
+  /* background-repeat: */
+  background-attachment: fixed;
+
+  /* font possibilities */
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 2;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-stretch: expanded;
+  /* font-variant: */
+}
+
+ul {
+  /* Edit unordered list style */
+  font-size: 40px;
+  color: purple;
+  letter-spacing: 13px;
+  font-family: 'Times New Roman';
+
+}
+
+li {
+  /* Edit list item style */
+}
+
+h1 {
+  /* Edit header 1 style */
+  font-size: 80px;
+  color: blue;
+  font-stretch: ultra-condensed;
+}
+
+.example1 {
+  /* Edit the class "example1" style" */
+
+  /* Overflow changes */
+  overflow: auto;
+  /*overflow-x: hidden;
+  /* overflow-y: scroll; */
+
+  position: relative;
+  border: 10px solid #DDD;
+  border-radius: 3px;
+  width: 80%;
+
+}
