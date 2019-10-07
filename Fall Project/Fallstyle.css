@@ -1,9 +1,18 @@
 
+/*Applies to the whole html document and makes
+ it so the user cannot scroll horizontally and it
+ also formats it with the margin control.
+*/
+html {
+  margin-top: none;
+  overflow-x: hidden;
+}
+ /*Styles the button "Fall Guide"*/
 .homebutton {
   color: LightGrey;
   text-align:center;
   position: relative;
-  display: inline-block;
+  display: block;
   font-size: 40px;
   font-family: fantasy;
   border-style: solid;
@@ -13,6 +22,38 @@
   float:left;
   background-color: #ff9933;
 }
+
+/*Styles the content that appears one the dropdown*/
+.homedrop {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  color: LightGrey;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  border-style: solid;
+  border-top: none;
+
+  border-color: Grey;
+  border-width: 6px;
+  background-color:#ff9933;
+  float: left;
+  margin-left: -9px;
+
+}
+
+/*Styles for when the homebutton is being hovered over with the
+mouse, which will display the dropdown*/
+.homebutton:hover .homedrop {
+  display: block;
+}
+.homebutton:hover {
+  border-bottom: none;
+}
+/*Applies to all anchors, but is generally used for the dropdowns -
+ see #spoon for usual anchor styling*/
 a:hover {
   color: grey;
 }
@@ -20,35 +61,7 @@ a {
   color: LightGrey;
   text-decoration: none;
 }
-
-html {
-  margin-top: none;
-}
-.homedrop {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  width: 98%;
-  color: LightGrey;
-  text-decoration: none;
-  text-align: center;
-  font-size: 25px;
-  border-style: solid;
-  border-top: none;
-  border-left: none;
-  border-color: Grey;
-  border-width: 6px;
-  background-color:#ff9933;
-
-}
-
-.homebutton:hover .homedrop {
-  display: block;
-}
-.homebutton:hover {
-  border-bottom: none;
-}
-
+/* Styles the title of the homepage*/
 .titleclass {
   text-align: center;
   font-family: 'Allura';
@@ -60,12 +73,15 @@ html {
   background-size: contain;
 }
 
+/* Specializes sizing of certain portions of text*/
 #dates {
   font-size: 34px;
 }
 #spansize {
-  font-size: 25px;
+  font-size: 35px;
 }
+
+/* Similar idea to .fallcontent as it applies to the whole document*/
 .bigfall {
   background-color: #ff9933;
   color: #fff2e5;
@@ -74,21 +90,115 @@ html {
   border-color: Grey;
 }
 
+/* Positions the image with the pumpkin spider on it*/
 #pumpimg {
   float: left;
+  margin-right: 20px;
+  border: 6px solid #e67300;
 }
 
+/*Applies to the bulk of the regular text on the homepage */
 .fallcontent {
-  padding-left: 140px;
+  padding-left: 30px;
   padding-right: 30px;
   font-size: 30px;
 
 }
 
+/* Relates to the clickable links throughout the document: one is on
+Spooner Farms, another on FreightHouse Square*/
 #spoon {
-  text-decoration: none;
+  text-decoration: underline;
   color: white;
 }
 #spoon:hover {
   color:LightGrey;
+}
+
+/* Styles for the part of the document about the haunted house */
+.spooky {
+  background-color: #ffa64d;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: -30px;
+  margin-right: -30px;
+  word-spacing: 4px;
+  overflow: auto;
+  padding-bottom: 40px;
+}
+iframe {
+  float: right;
+}
+
+/* All food document related styles */
+.foodfall {
+  border-style: solid;
+  border-top: none;
+  border-color: Grey;
+  border-width: 3px;
+  background-color: #ff9933;
+  color: #fff2e5;
+  font-size: 30px;
+}
+
+.foodtextgen {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#foodtitle {
+  text-align: center;
+  font-family: 'Allura';
+  font-size: 80px;
+}
+
+.colorblk {
+  background-color: #ffa64d;
+  word-spacing: 4px;
+  overflow: auto;
+  margin-left: -30px;
+  margin-right: -30px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-style: solid;
+  border-width: 5px;
+  border-left: none;
+  border-right: none;
+  border-color: #e67300;
+}
+
+#pumpbreadimg {
+  float:right;
+  border: 14px double #e67300;
+}
+
+#doubleline {
+  border: 20px double #e67300;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  padding-left: 500px;
+  padding-right: 600px;
+  padding-top: 20px;
+  margin-top: 0px;
+  margin-left: -30px;
+  margin-right: 0px;
+  text-align: center;
+}
+
+#borderline {
+  border-top: 20px double #e67300;
+  padding-left: 31.5%;
+  padding-right: 31.5%;
+  margin-left: -70px;
+  margin-right: -200px;
+}
+
+#listspace {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.moveimg {
+  margin-right: 300px;
 }
