@@ -99,8 +99,6 @@ a {
 
 /*Applies to the bulk of the regular text on the homepage */
 .fallcontent {
-  padding-left: 30px;
-  padding-right: 30px;
   font-size: 30px;
 
 }
@@ -120,8 +118,8 @@ Spooner Farms, another on FreightHouse Square*/
   background-color: #ffa64d;
   padding-left: 30px;
   padding-right: 30px;
-  margin-left: -30px;
-  margin-right: -30px;
+  margin-left: 0%;
+  margin-right: 0%;
   word-spacing: 4px;
   overflow: auto;
   padding-bottom: 40px;
@@ -130,6 +128,14 @@ iframe {
   float: right;
 }
 
+.linkbar a {
+  font-size: 30px;
+  color: white;
+}
+
+.linkbar a:hover {
+  color: LightGrey;
+}
 /* All food document related styles */
 .foodfall {
   border-style: solid;
@@ -142,8 +148,8 @@ iframe {
 }
 
 .foodtextgen {
-  padding-left: 30px;
-  padding-right: 30px;
+ color: white;
+ width: 100%;
 }
 #foodtitle {
   text-align: center;
@@ -155,11 +161,9 @@ iframe {
   background-color: #ffa64d;
   word-spacing: 4px;
   overflow: auto;
-  margin-left: -30px;
-  margin-right: -30px;
+  margin-left: 0%;
+  margin-right: 0%;
   padding-bottom: 40px;
-  padding-left: 30px;
-  padding-right: 30px;
   border-style: solid;
   border-width: 5px;
   border-left: none;
@@ -177,21 +181,21 @@ iframe {
   border-left: none;
   border-right: none;
   border-bottom: none;
-  padding-left: 500px;
-  padding-right: 600px;
   padding-top: 20px;
-  margin-top: 0px;
-  margin-left: -30px;
-  margin-right: 0px;
-  text-align: center;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding-left: 20px;
+  text-align: left;
 }
 
-#borderline {
+.borderline {
   border-top: 20px double #e67300;
-  padding-left: 31.5%;
-  padding-right: 31.5%;
-  margin-left: -70px;
-  margin-right: -200px;
+  width: 100%;
+  text-align: center;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 0px 300px;
+  overflow-x: hidden;
 }
 
 #listspace {
@@ -201,4 +205,35 @@ iframe {
 
 .moveimg {
   margin-right: 300px;
+}
+ /*All code for the Halloween page*/
+#trickimg {
+  float: right;
+  border: 14px double #e67300;
+}
+
+#introhall {
+  overflow:auto;
+  border-top: 6px solid #e67300;
+  padding: 20px;
+  margin-left: 0%;
+  margin-right: 0%;
+  font-size: 30px;
+}
+
+.costume {
+  overflow: auto;
+  font-size: 30px;
+  border-style: double;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-width: 24px;
+  border-color: #e67300;
+}
+
+#sodaimg {
+  float:right;
+  border: 14px double #e67300;
+  margin-right: 100px;
 }
