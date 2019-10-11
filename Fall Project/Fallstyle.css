@@ -7,7 +7,9 @@ html {
   margin-top: none;
   overflow-x: hidden;
 }
- /*Styles the button "Fall Guide"*/
+ /*Styles the button "Fall Guide" including a centered text align, a fun font family (or font style)
+ The float means that this will appear on the left of the webpage. Because it is a block, you can hover over
+ any part of it and it will dropdown. */
 .homebutton {
   color: LightGrey;
   text-align:center;
@@ -23,11 +25,15 @@ html {
   background-color: #ff9933;
 }
 
-/*Styles the content that appears one the dropdown*/
+/*Styles the content that appears one the dropdown. The width is 100% so that it
+matches that of the top dropdown block. The text decoration was taken away so that the Links
+are not underlined. The border around them is just for style, but because it slightly offset the dropdown
+from the dropdown block, I had to make the margin a negative number to get it to line up perfectly.
+You'll notice that it's floated left to match that of the homebutton. The display is none because when the dropdown
+block is not being hovered over, it's hidden. */
 .homedrop {
   display: none;
   position: absolute;
-  z-index: 1;
   width: 100%;
   color: LightGrey;
   text-decoration: none;
@@ -35,7 +41,6 @@ html {
   font-size: 25px;
   border-style: solid;
   border-top: none;
-
   border-color: Grey;
   border-width: 6px;
   background-color:#ff9933;
@@ -49,11 +54,19 @@ mouse, which will display the dropdown*/
 .homebutton:hover .homedrop {
   display: block;
 }
+/*This is so that when the homebutton is hovered over, the bottom border of the dropdown block does
+not appear. This is simply for a better look.*/
 .homebutton:hover {
   border-bottom: none;
 }
+
+/*Below is all of the mainpage CSS stuff!*/
+
+
+
 /*Applies to all anchors, but is generally used for the dropdowns -
- see #spoon for usual anchor styling*/
+ see #spoon for usual anchor styling. When the anchor is hovered over, its color changes.
+ */
 a:hover {
   color: grey;
 }
@@ -61,7 +74,9 @@ a {
   color: LightGrey;
   text-decoration: none;
 }
-/* Styles the title of the homepage*/
+/* Styles the title of the homepage. The background image is being cited directly here using url() instead of img because it's in CSS. The
+font 'Allura' is a special google font that needs to be referenced in the meta data. Background-size:contain helps adjust the image so that it
+appears in an appealing way and fits to the screen well.  */
 .titleclass {
   text-align: center;
   font-family: 'Allura';
@@ -81,7 +96,8 @@ a {
   font-size: 35px;
 }
 
-/* Similar idea to .fallcontent as it applies to the whole document*/
+/* Similar idea to .fallcontent as it applies to the whole document, and also importantly
+puts a grey border over the whole document. */
 .bigfall {
   background-color: #ff9933;
   color: #fff2e5;
@@ -90,7 +106,9 @@ a {
   border-color: Grey;
 }
 
-/* Positions the image with the pumpkin spider on it*/
+/* Positions the image with the pumpkin spider on it and any other image that cites
+#pumpimg - it will appear on the left side of a text wrap because of float:left and the
+border is decoration. The margin-right is so that the wrapped text is not too close to the image. */
 #pumpimg {
   float: left;
   margin-right: 20px;
@@ -104,7 +122,8 @@ a {
 }
 
 /* Relates to the clickable links throughout the document: one is on
-Spooner Farms, another on FreightHouse Square*/
+Spooner Farms, another on FreightHouse Square. This styles them specially and makes them
+change colors when hovered over because of the #spoon:hover */
 #spoon {
   text-decoration: underline;
   color: white;
@@ -113,7 +132,9 @@ Spooner Farms, another on FreightHouse Square*/
   color:LightGrey;
 }
 
-/* Styles for the part of the document about the haunted house */
+/* This part styles the haunted house - the margin percents are so that it
+takes up the whole space. Overflow:auto just makes sure that all of the elements of
+spooky are wrapped inside of it, and more importantly have the same background color. */
 .spooky {
   background-color: #ffa64d;
   padding-left: 30px;
@@ -124,10 +145,14 @@ Spooner Farms, another on FreightHouse Square*/
   overflow: auto;
   padding-bottom: 40px;
 }
+
+/*This applies to the halloween video as it is an 'iframe' and not a vid as it comes from youtube.
+Floating it to the right positions it on the right of the screen. */
 iframe {
   float: right;
 }
-
+/*This is for the citations list so that the citations appear white and 30 pixels in size.
+Linkbar a:hover means that when the links are hovered over, they turn light grey. */
 .linkbar a {
   font-size: 30px;
   color: white;
@@ -136,7 +161,15 @@ iframe {
 .linkbar a:hover {
   color: LightGrey;
 }
-/* All food document related styles */
+
+
+
+/* All food document related styles are below (there is some overlap between documents, so this is general)*/
+
+
+
+/*This is a general style for the food document, including a grey border around the whole document and other
+specifications. */
 .foodfall {
   border-style: solid;
   border-top: none;
@@ -145,18 +178,22 @@ iframe {
   background-color: #ff9933;
   color: #fff2e5;
   font-size: 30px;
+  width: 100%;
 }
-
-.foodtextgen {
- color: white;
- width: 100%;
-}
-#foodtitle {
+/*This div is empty as I decided to move all of its specifications from this one to foodfall. The
+reason that I'm not deleting it is because it helps structure the document.  */
+.foodtextgen {}
+/*This is used for important headers throughout the document to introduce the different sections.*/
+.foodtitle {
   text-align: center;
   font-family: 'Allura';
   font-size: 80px;
 }
-
+/*This is a very importat div as it helps make the contrasting background colors
+between the different restaurants listed. The overflow:auto is once again just to
+wrap all of the text together neatly. The border specifications are set as I used the top
+and bottom borders as dividers between different sections. That is why the borders on the sides
+are set to "none."*/
 .colorblk {
   background-color: #ffa64d;
   word-spacing: 4px;
@@ -170,12 +207,16 @@ iframe {
   border-right: none;
   border-color: #e67300;
 }
-
+/*This is the specifications for the pumpkin bread image and any other images
+that have similar characteristics. In the food doc, it is used for both the carrot
+cake and pumpkin bread images.*/
 #pumpbreadimg {
   float:right;
   border: 14px double #e67300;
 }
-
+/*This is designed to put a double border above text and is used twice in the food document.
+Certain specifications like padding were added later to fit the needs of the applications of this
+id. */
 #doubleline {
   border: 20px double #e67300;
   border-left: none;
@@ -187,40 +228,82 @@ iframe {
   padding-left: 20px;
   text-align: left;
 }
-
-.borderline {
-  border-top: 20px double #e67300;
-  width: 100%;
-  text-align: center;
-  margin-left: 0%;
-  margin-right: 0%;
-  padding: 0px 300px;
-  overflow-x: hidden;
-}
-
+/*This is just to give a little more space to the bottom of the food document as it was
+crowded. */
 #listspace {
   margin-top: 20px;
   padding-top: 20px;
 }
-
+/*This was applied to the carrot cake photo because it was too close to the right side
+of the screen and so for it to still have the pumpbreadimg id I just made a new class to change
+the margin. */
 .moveimg {
   margin-right: 300px;
 }
+
+
  /*All code for the Halloween page*/
+
+
+/*This is an important piece of code, as after making it, I implemented it into the fallfood page as well.
+quickclick is essentially a navigation bar inside of a webpage. The top margin is negative to account for divs
+that naturally add spacing as I didn't want a lot of space between headers and the navigation bar beneath them.
+The overflow:hidden makes it so that the navigation bar fills the whole width of the screen and doesn't cause any
+formatting issues.
+*/
+ .quickclick {
+   display: block;
+   font-size: 30px;
+   margin-top: -50px;
+   background-color: #e67300;
+   margin-left: 0px;
+   margin-right: 0px;
+   padding: 0px;
+   overflow: hidden;
+
+ }
+ /*This applies only to the anchors. By floating left, they all line up horizontally.
+ The other qualities are just for good looks. */
+ .quickclick a {
+   float: left;
+   padding: 12px 30px;
+   border: 3px solid #e67300;
+   color: white;
+   background-color: #e67300;
+
+ }
+ /*This is so that when the class of the anchor is 'here' it will appear the specified color and have rounded
+ borders. Essentially, the page that the viewer is already on will appear the specified color. The border-radius makes the
+ rounded corners. */
+ .quickclick a.here {
+   background-color: black;
+   border-bottom: black;
+   border-radius: 25px;
+ }
+/*This makes it so that when you are at a location displayed in a navigation bar, you
+do not get a color change when you hover over it. However, you do get a color change when you
+hover over the others. */
+ .quickclick a:hover:not(.here) {
+   color: LightGrey;
+   background-color:#ffa64d;
+ }
+ /*This is the code for this particular image. It is of kids trick or treating. It will appear on the right of the screen with a border.*/
 #trickimg {
   float: right;
   border: 14px double #e67300;
 }
 
+/*This controls the identity of the intro halloween page. The overflow:auto makes it so any images are wrapped inside the div correctly.*/
 #introhall {
   overflow:auto;
-  border-top: 6px solid #e67300;
-  padding: 20px;
+  padding: 30px;
   margin-left: 0%;
   margin-right: 0%;
   font-size: 30px;
 }
 
+/*This class is used more than once for seperating big sections of the halloween text. These elements
+have all been previously explained. You can see that all of the borders besides the top one will not appear. */
 .costume {
   overflow: auto;
   font-size: 30px;
@@ -231,9 +314,49 @@ iframe {
   border-width: 24px;
   border-color: #e67300;
 }
-
+/*This style was added to all sub-article headers for a more fancy look, hence the
+class title and also the use of the 'Allura' font. */
+#fancy {
+  background-color: #ffa64d;
+  border-bottom: 24px double #e67300;
+  padding: 20px;
+  margin-top: 0px;
+  font-family: 'Allura';
+  text-align: center;
+  font-size: 70px;
+}
+/*This describes the image of the soda bottle costume and it has certain margin specifications based off
+of its positioning. */
 #sodaimg {
   float:right;
   border: 14px double #e67300;
   margin-right: 100px;
 }
+/*All of the code below applies to the table at the bottom of the halloween document.
+The first section, table,th,td  gives all of the rows of the table the same characteristics
+including a grooved bordering, the same spacing and borderwidth, and a slight shift to the right 40px.
+*/
+table,th,td {
+  border-style: groove;
+  border-color: #e67300;
+  border-spacing: 3px;
+  border-width: 5px;
+  margin-left: 40px;
+}
+/*This is just used to stylistically give all of the data a little more space.*/
+td,th {
+  padding-left: 10px;
+}
+/*This applies to the table as a whole. The border-collapse control means that borders will not
+go around individual cells but rather join into one seamless border. The width is just to determine the width
+of the whole table, and I chose to float it left so that I could have text on the right. */
+table {
+  border-collapse: collapse;
+  width: 600px;
+  background-color: #e67300;
+  float:left;
+}
+/*This controls the staggered coloring of the rows. Essentially, at the second row, the background color is the
+one specified. At the first and third rows, the font color is white. */
+tr:nth-child(even) {background-color: #ffa64d}
+tr:nth-child(odd) {color: white}

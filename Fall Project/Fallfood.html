@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html dir="ltr">
+<!--This is the meta data. It contains links to the Fallstyle.css document
+and also to the font 'Allura' which is used from time to time. Fall Food is the official title.-->
   <head>
     <meta charset="utf-8">
     <title>Fall Food</title>
@@ -7,21 +9,50 @@
     <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
   </head>
   <body>
+    <!--Below is the homebutton - the first div is the part of the homebutton
+  that is always seen, while div class homedrop is just for the things that
+appear when the fall guide is being hovered over. They both link to the other two
+html documents associated with this project. The ./ is how they're linked to other html documents.  The 'Fall Guide' tab has an id of 5 because this document
+has a navigation bar that brings it to 'home,' or the top of the page.-->
     <div class="homebutton">
-      <span><a href="./Mainfall.html">Fall Guide</a></span>
+      <span><a id=5 href="./Mainfall.html">Fall Guide</a></span>
     <div class="homedrop">
         <span><a href="./Fallfood.html">Food</a></span> <br>
         <span><a href="./Halloween.html">Halloween</a></span>
       </div>
     </div>
+    <!--Foodfall is just the general fall class, applied to all of the text below.-->
     <div class="foodfall">
-                      <h1 class=titleclass>Fall Food Favorites!</h1>
+      <!--This is the big fancy title with the pumpkins in the background.-->
+            <h1 class=titleclass>Fall Food Favorites!</h1>
+      <!--This is the dark orange navigation bar that is seen throughout the document. The hashtags within
+    the hrefs link to specific places within this webpage. These places are determined by ids. The page will switch
+  to the section with these ids. -->
+            <div class="quickclick">
+              <a class="here" href="#5">Home</a>
+              <a href="#1">Restaurants</a>
+              <a href="#2">Family Recipes</a>
+            </div>
+            <!--Below is another general div for the main text.-->
             <div class="foodtextgen">
-                        <span> Here we have plenty of places to eat on chilly fall days here
+              <!--This break is just for spacing purposes, and this is a pretty basic span, or a short paragraph.-->
+                        <br>
+                        <span > Here we have plenty of places to eat on chilly fall days here
                           in the beautiful city of Tacoma, as well as some delicious sweet treats
                         that you can make with your fall produce or just to embrace the festivity
                       of fall. </span>
-                        <h2 id="foodtitle">Delicious places to eat</h2>
+                      <!--This is a big title with the same quickclick nav bar beneath it. This is also one of the places that
+                    the navigation bar links to. Because the class is 'here' over the family recipes section of the bar, this will
+                  appear black. -->
+                        <h2 id="1" class="foodtitle">Delicious places to eat</h2>
+                        <div class="quickclick">
+                          <a href="#5">Home</a>
+                          <a class="here" href="#1">Restaurants</a>
+                          <a href="#2">Family Recipes</a>
+                        </div>
+                        <!--The h3 or a header smaller than h2 and h1 has an anchor inside of it that leads to the website for cook's tavern.
+                      Below it is a description for cook's tavern. The id of spoon is a special id used for links so they have the right colors
+                    and hover properties.-->
                     <div class="colorblk">
                               <h3><a id="spoon" href="https://www.cookstavern.com/" target="_blank">Cook's Tavern</a></h3>
                                 <p>Cook's tavern is a family favorite, offering hearty meals and good service.
@@ -29,20 +60,35 @@
                               places around the world, including cultural art, food, and a display in the front. This is
                             a great restaurant to cozy up in with your family.</p>
                     </div>
-
+                    <!--Similar to the cook's tavern situation, this is a link to the Rosewood Cafe website.
+                  Unlike the first section, this does not have the div of colorblock, and so it will not appear a lighter orange
+                like the others. -->
                     <h3><a id="spoon" href="http://rosewoodcafe.com/" target="_blank">The Rosewood Cafe</a></h3>
                     <p>Just down the street from Cook's Tavern, the Rosewood cafe is a Tacoma classic. Drop in here
                         for lunch or a casual dinner. They have delicious sandwiches, daily soups and great, warm cookies
                       for dessert. My family and I have gone here for as long as I can remember, and the warm and welcoming
                     environment makes it a place to return to. </p>
-
+                    <!--This below is the same situation as the cook's tavern section.-->
                     <div class="colorblk">
                               <h3><a id="spoon" href="http://thanbrothers.com/#/" target="_blank">Pho Than Brothers</a></h3>
                               <p>Down by the University of Washington, this statewide Pho chain is highly recommended. Go here for a delicious,
                               warm meal. Maybe stop by the Tacoma Art Museum nearby for an entertaining afternoon with your family. The Children's
                             Museum of Tacoma is nearby as well if you have young kids or younger siblings. </p>
                     </div>
-                        <h2 id="foodtitle">Fun Recipes for the Whole Family</h2>
+                    <!--This is the header of the next section. The class of foodtitle is used to give this special characteristics. The id of 2
+                  is used so that when the Family Recipes link is clicked, it leads to the top of the family recipes portion of the page. -->
+                        <h2 id="2" class="foodtitle">Fun Recipes for the Whole Family</h2>
+                        <!--Here is that same navigation bar with 'Family Recipes' having the class 'here' as the user is at the family recipes <section>
+                          of the webpage.
+                        </section>-->
+                        <div class="quickclick">
+                          <a href="#5">Home</a>
+                          <a href="#1">Restaurants</a>
+                          <a class="here" href="#2">Family Recipes</a>
+                        </div>
+                        <!--Like before, this has the div of colorblk. This will make the background and some other minor formatting different. Besides that, most
+                      of the information below is pretty standard, with paragraphs, strong for bold text, and an image. I found the width and height of the image
+                    by dividing the original image dimensions by the same number, effectively keeping their width to height ratio and not distorting the image. -->
                         <div class="colorblk">
                               <h3>Pumpkin Bread</h3>
                               <p>My family's favorite fall recipe, this delicious pumpkin bread can be baked into muffins! Also, if you add orange butter,
@@ -50,6 +96,8 @@
                               <p><strong>Instructions: </strong><br>
                               First, gather the ingredients listed below: </p>
                               <img width=500px height=333.5px id="pumpbreadimg" src="pumpbread.jpg" alt="Pumpkin Bread">
+                              <!--Below is a ul or unordered list, showing all of the list items or <li>s below as bulleted points
+                            of an indented list. This is an ingredients list. -->
                               <ul>
                                 <li>1 teaspoon baking soda</li>
                                 <li>1/2 cup hot water</li>
@@ -63,6 +111,8 @@
                                 <li>3 1/2 cups all purpose flour</li>
                               </ul>
                               <br>
+                              <!--Below is an ol or ordered list. The directions are a bolded span and the list items will appear numbered.
+                            This is useful as these are baking instructions. -->
                               <div id=doubleline>
                                   <span><strong>Directions:</strong></span>
                                   <ol>
@@ -76,12 +126,14 @@
                                   <span>This recipe was borrowed from page 27 of California Sizzles by the Junior League of Pasadena, Inc. </span>
                               </div>
                         </div>
+                        <!--This is a very similar setup to the above recipe. This time, the image is inside the unordered list,
+                      but nothing changes because it isn't a list item. The image is inside the ul because it is floated to the right of the list.  -->
                         <h3> Carrot Cake </h3>
                         <p>Another fun fall favorite, Carrot cake is a great dessert for more formal fall occasions. </p>
                         <strong>Instructions: </strong><br>
                         <span>Gather these items:</span>
                         <ul>
-                            <img class="moveimg" id=pumpbreadimg height="360" width="360" src="carrotcake.jpg" alt="A delicious carrot cake">
+                          <img class="moveimg" id=pumpbreadimg height="360" width="360" src="carrotcake.jpg" alt="A delicious carrot cake">
                           <li>2 cups all-purpose flour</li>
                           <li>2 teaspoons baking powder</li>
                           <li>1 teaspoon baking soda</li>
@@ -97,6 +149,8 @@
                           <li>1 teaspoon vanilla extract</li>
                           <li>3 cups grated carrots</li> <br>
                 </ul>
+                <!--Below are the instructions for the carrot cake. The ids below are explained in the css file, but they basically just alter basicl formatting.
+              Because this is another recipe, the list is an ol for organization. -->
                         <div id=doubleline>
                             <span><strong>The instructions for the cake are as follows:</strong></span> <br>
                             <ol id=listspace>
@@ -109,10 +163,9 @@
                             </ol>
                         </div>
                         <br>
+                        <!--This is just a basic span with a couple of breaks or <br>s for spacing.-->
                         <span id="listspace">This recipe comes from the website Live Well Bake Often and was made by Danielle and was orginally titled:
                         "The BEST Carrot Cake with Cream Cheese Frosting."</span> <br><br>
-
-
 
           </div>
     </div>

@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!--This is the meta data for the halloween.html page. It links to the css Fall Style page
+  and also to the font 'Allura' which is a google font. -->
     <meta charset="utf-8">
     <title>Halloween</title>
     <link rel="stylesheet" type="text/css" href="Fallstyle.css">
     <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
   </head>
   <body>
-    <div class="bigfall">
+    <!--Like in my other documents, bigfall is just a class for fall. It also has an id of 10
+  so that the navigation bar below links to the top. -->
+    <div id=10 class="bigfall">
+      <!--Below is the homebutton - the first div is the part of the homebutton
+    that is always seen, while div class homedrop is just for the things that
+  appear when the fall guide button is being hovered over. They both link to the other two
+html documents associated with this project. The ./ is how they're linked to other html documents. -->
       <div class="homebutton">
         <span><a href="./Mainfall.html">Fall Guide</a></span>
       <div class="homedrop">
@@ -15,7 +23,18 @@
           <span><a href="./Halloween.html">Halloween</a></span>
         </div>
       </div>
+      <!--This is the big title with the pumpkins behind it at the top of the document. -->
       <h1 class="titleclass">Halloween</h1>
+      <!-- Below is the navigation bar. The class 'here' describes which tab the user is currently on.
+    In this case, the user is 'home'.-->
+      <div class="quickclick">
+        <a class="here" href="#10">Home</a>
+        <a href="#1">Costumes</a>
+        <a href="#2">Candy</a>
+        <a href="#3">Trick or Treat</a>
+      </div><br>
+      <!--This div is mainly for organization purposes. Inside is a quick intro paragraph, an image of kids trick or treating,
+    and that's about it.-->
       <div>
         <p id="introhall">
           <img id="trickimg" src="tricktreat.jpg" alt="Some kids trick or treating" height="300px" width="300px">
@@ -24,9 +43,23 @@
       to celebrate. Below, you will find DIY costume ideas, ethical candy options, and the best
     trick or treating places in Tacoma. Enjoy!</p>
       </div>
-      <div class="costume">
-        <h2>Spooky Costume DIYS</h2>
+      <!--This is a header for the costume section. You can see that the quickclick div below is a familiar
+    navigation bar. The class 'here' is set to 'Costumes' because the user is in that section. The id of 1 of the class
+  'costume' is so that when Costumes is clicked in the nav bar, the user is sent there. -->
+      <div id=1 class="costume">
+        <h2 id=fancy>Spooky Costume DIYS</h2>
+        <div class="quickclick">
+          <a href="#10">Home</a>
+          <a class="here" href="#1">Costumes</a>
+          <a href="#2">Candy</a>
+          <a href="#3">Trick or Treat</a>
+        </div><br><br>
+        <!--This ordered list applies to each section of costume- each entire costume description and other elements is all
+      part of this ordered list. -->
         <ol>
+          <!--This costume has an image floated to the right and an unordered list within the ordered list and also within a paragraph.
+        The list and paragraph will appear to the left while the image will appear to the right because it has been floated right. The paragraph
+      and list are pretty straightforward.-->
           <li><h3>Soda Bottle Costume</h3>
                 <img width=360px height=540px id= sodaimg src="soda.jpg" alt="A soda bottle halloween costume" >
                 <p>This costume is an easy hit! To make it, gather these simple items:
@@ -42,6 +75,9 @@
                   friends.
                 </p>
           </li> <br><br>
+          <!--The next list item has similar characteristics to the first. The width and height are a little weird but I divided the original
+        width and height by a constant so their relationship is the same. The setup is similar with an image on the right and an unordered list and
+      paragraph on the left. -->
           <li>
                 <h3>Sashimi Costume</h3>
                 <img width= 294.5px height= 442.4 id= sodaimg src="sushi.jpg" alt="A sashimi halloween costume">
@@ -61,6 +97,7 @@
                     your white dress.
                 </p>
           </li> <br><br>
+          <!--The next list item is virtually identical to the other 2.-->
           <li>
               <h3>Boba Tea Costume</h3>
               <img id=sodaimg width= 368px height= 552 src="boba.jpg" alt="An image of the boba tea halloween costume">
@@ -78,10 +115,113 @@
                 Glue the pom-poms onto the dress. For the headband, wrap pink paper around the
                 paper towel roll and glue or tape it on. Cut the paper towel roll sideways
                 and glue it onto the headband. You're all set! Just put the whole outfit together
-                and you'll have a great costume. 
+                and you'll have a great costume.
             </p>
           </li>
         </ol>
+        <!--This is just a span at the end.-->
+        <span>I hope you enjoyed these fun DIYS!</span>
+      </div> <br>
+      <!--Below is another div of the class 'costume.' The class 'here' is applied to candy as the user
+    is in the candy section, which has an id of 2 as defined by the div.-->
+      <div id=2 class="costume">
+        <!--The fancy id was used before but it basically alters the font and font size.-->
+        <h2 id=fancy>Ethical Candy Options!</h2>
+        <!--Here is the navigation bar. The breaks are just for formatting and space.-->
+        <div class="quickclick">
+          <a href="#10">Home</a>
+          <a href="#1">Costumes</a>
+          <a class="here" href="#2">Candy</a>
+          <a href="#3">Trick or Treat</a>
+        </div><br><br>
+        <!--This is just a short intro paragraph-->
+        <p>Halloween should be a time of celebration, good food, and spooky times. It should
+        not be a place for unethical and unsustainable companies to make millions. That is why I've compiled
+      a short list of ethical candy to make your halloween a little less impactful. </p>
+      <!--Here is an ordered list. Each list item is a different halloween candy blurb.-->
+      <ol>
+        <!--Like the costumes above, this formatting has an image, but this time floated to the left, and some text on the
+      right. The breaks are just for formatting purposes. -->
+        <li><h3>Try Equal Exchange Halloween Candy!</h3>
+        <img id=pumpimg width=339.2px height=372.8px src="equalchoc.png" alt="A photo of Equal Exchange halloween candy">
+        <p>This delicious and fair trade halloween candy comes in a box perfect for serving to trick or treaters.
+        The company, Equal Exchange, uses responsibly-sourced chocolate and milk for these awesome little squares.</p></li>
+<br><br><br><br><br><br>
+        <!--As you can see from the id =sodaimg, this section is almost identical to the costume formatting above, with the
+      image on the right and the text on the left. I switched the side of the image between the list items for variety.
+    The breaks are again for formatting.-->
+        <li>
+              <h3>Try See's Candy!</h3>
+              <img id=sodaimg height=259px width=259px src="lolly.jpg" alt="See's Candy Lollypops">
+              <p>See's Candy uses ethically-sourced high-quality chocolate.
+              This particular form comes in lollypops that everyone is sure to love.
+            Their chocolate has special ethical certifications, making it a great product
+          for those looking for an ethical chocolate.</p>
+        </li>
+        <br><br><br><br><br><br>
+        <!--This list item has the same id of above of pumpimg, which floats this image to the left. It is also similar in formatting to the other 2.-->
+        <li>
+              <h3>Lake Champlain Chocolate</h3>
+              <img id=pumpimg src="canadachoc.jpg" alt="Lake Champlain Chocolate">
+              <p>
+                  Like the chocolate above, Lake Champlain chocolate is organic and commited to
+                  good practices. Plus, many of their products come filled with caramel or peanut butter,
+                  and they generally use less plastic in their packaging than many other brands. Plus, I'm
+                  pretty sure they're Canadian! Bonus!
+              </p>
+        </li>
+      </ol>
+      </div>
+      <!--These breaks are for spacing.-->
+      <br><br>
+
+      <!--This is the final section of the halloween document. It has the same section id of fancy, and the div has an id of 3 for the nav bar to
+    link to it. You can see that we are on the trick or treat section of the document because the anchor with a class of 'here' has Trick or Treat as the
+  displayed text.-->
+      <div id=3 class="costume">
+        <h2 id=fancy>Best Places to Trick or Treat in Tacoma!</h2>
+        <div class="quickclick">
+          <a href="#10">Home</a>
+          <a href="#1">Costumes</a>
+          <a href="#2">Candy</a>
+          <a class="here" href="#3">Trick or Treat</a>
+        </div><br><br>
+        <!--Below is a paragraph and then a table. The table is floated to the right so the paragraph beneath it appears next to it. -->
+        <p>According to Trip Savvy, there are some really good places to trick or treat in Tacoma.
+        I am going to compare my favorite places to theirs.
+        <!--Tables are built row by row, and each tr represents one table row.
+        The th is the table headers, or the titling of a table. The first row is "(blank), trip savvy rating, my rating" for example.
+        For the table data, the td block is used. The whole table and span beneath are part of a paragraph, but that's probably unnecessary.
+        The breaks at the end are just for formatting purposes. 
+      -->
+          <table>
+            <tr>
+              <th></th>
+              <th>Trip Savvy Rating</th>
+              <th>My rating</th>
+            </tr>
+
+            <tr>
+              <th>1</th>
+              <td>Proctor</td>
+              <td>Proctor</td>
+            </tr>
+
+            <tr>
+              <th>2</th>
+              <td>Fircrest</td>
+              <td>Old Town</td>
+            </tr>
+
+            <tr>
+              <th>3</th>
+              <td>Stadium District</td>
+              <td>Tacoma Ave</td>
+            </tr>
+          </table>
+          <span >What do you think about the rating? Email me at <a href="mailto:anna_parrott@aw.org?subject=What%20I%20think%20about%20your%20Halloween%20page">anna_parrott@aw.org</a> for
+          comments and concerns!</span>
+      </p> <br><br><br><br>
       </div>
     </div>
   </body>

@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--This is the main fall webpage. Below is 'Tacoma's Guide to Fall'
+The link is so that I can use the font "Allura" in my webpage. The other link
+is to link my CSS file to this file.
+-->
 <html>
   <head>
     <meta charset="utf-8">
@@ -7,7 +11,12 @@
     <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
   </head>
   <body>
+    <!--Class 'bigfall' is just the general font for fall-->
     <div class="bigfall">
+      <!--Below is the homebutton - the first div is the part of the homebutton
+    that is always seen, while div class homedrop is just for the things that
+  appear when the fall guide is being hovered over. They both link to the other two
+html documents associated with this project.  The ./ is how they're linked to other html documents. -->
         <div class="homebutton">
           <span><a href="./Mainfall.html">Fall Guide</a></span>
         <div class="homedrop">
@@ -15,63 +24,69 @@
             <span><a href="./Halloween.html">Halloween</a></span>
           </div>
         </div>
+        <!--Below is the h1 which is a header style for the front page. It has a special class to make it have
+      pumpkins in the background. -->
         <h1 class="titleclass">Tacoma Guide to Fall</h1>
+        <!--Like bigfall, fallcontent determines more specification for the style of the general text of this document.-->
         <div class="fallcontent">
+          <!--This is a span, which is basically just a short paragraph. The p, or paragraph below it, is my intro
+        to fall in tacoma.-->
             <span>By Anna Parrott</span>
             <p>Fall in Tacoma is a time of eating, pumpkin-themed activities, and spending time
             with family. Halloween tops off fall as the season's biggest festivity. This webpage is
           dedicated to describing Tacoma's special way of celebrating fall.</p>
+          <!--This image is of the haybale spider which has a special ID to control its position on the page. The width and height of the
+        image is based on a factor of the relationship of the original width and height of the image. It has been scaled down to fit into the webpage.
+      The alt describes the text that will appear if the photo doesn't load to describe it. The src cites the image that is within this folder titled pumpspid.jpg-->
           <img id="pumpimg" src="pumpspid.jpg" alt="A halebale spider in a field of pumpkins" width="409.6" height="307.2">
+          <!--The anchor, a, has content called 'Spooner Farms' and since the anchor has a special id it will appear differently when floated over. Target="_blank" is so that
+        it opens in a new page.
+The id on the paragraph is to give it special style.
+      -->
           <p id="spansize"><a id="spoon" href="http://www.spoonerberries.com/harvest-festival/" target="_blank"><strong>Spooner Farms,</strong></a>
             located right outside of Tacoma in Puyallup, has a pumpkin patch full of family fun.
             They also have a corn maze and spiders like this for a great family photo-op.</p>
-            <p>The festival will be happening from <strong id="dates">September 28th- October 31st</strong> </p>
+            <!--The strong brings emphasis to the dates and the id gives it even more specialty as seen in the css document. ID, like style, gives a special
+     characteristic depending on the css style of the document. The break is to return and start a new text line on the document. Break =br-->
+            <p>The festival will be happening from <strong id="dates">September 28th- October 31st.</strong> </p>
             <br><span id="spansize">This year's corn-maze theme is 'Welcome to the Jungle.' Don't miss it! </span> <br>
+ <!--The class spooky defines the padding and some other basic parts of this section of text, including a slightly different background. -->
     <div class="spooky">
         <h2>Tacoma Haunted House Tour</h2>
+        <!--The iframe is from youtube under the 'embed' section. This will lead to a youtube video when clicked. The anchor over freighthouse station operates the same as the
+      spooner farms anchor.The id, as you will notice, is also the same as the spooner farms link. -->
             <p>Another fun attraction in Fall is haunted houses! In Tacoma, the
               <iframe width="560" height="315" src="https://www.youtube.com/embed/p-grRJoZOhg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               scariest event of the year is at <a id="spoon" href="https://www.tacomahaunts.com/" target="_blank">FreightHouse Station</a> on 2501 East G Street, Tacoma.
               The event runs on <strong id="dates">October 10-12, 17-19, 24-26, and 31-2</strong> from 7:00-10:00 on Thursdays and 7:00-11:00 on Fridays and Saturdays. It is around $15 per person.
             </p> <br>
                 </div>
+                <!--Below is the citations bar. target="_blank" means that the link opens in a new tab. They will also change color when hovered over because that is a set attribute of anchors and because they have
+              the class "linkbar"-->
                     <p>Citations: <br>
                       <div class= "linkbar">
                             <a target="_blank" href="http://www.spoonerberries.com/wp-content/uploads/2011/09/IMG_1495.jpg">Spooner farms photo</a> <br>
-                            <a target="_blank" href="http://www.spoonerberries.com/harvest-festival/">spooner farms page</a><br>
-                            <a target="_blank" href="https://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/4/dd/4dd99e26-c51d-5f1d-9b7e-764117e8a318/596e1e41b1074.image.jpg?resize=1200%2C800">pumpkin title photo</a><br>
-                            <a target="_blank" href="https://www.tacomahaunts.com/">haunted house webpage</a><br>
-                            <a target="_blank" href="https://www.eventbrite.com/e/frighthouse-station-tickets-69194569821?aff=tacomahauntstickets">frighthouse station ticket info</a><br>
-                            <a target="_blank" href="https://www.youtube.com/watch?v=p-grRJoZOhg#action=share">frighthouse video</a><br>
-                            <a target="_blank" href="https://www.cookstavern.com/">cooks tavern</a><br>
-                            <a target="_blank" href="http://rosewoodcafe.com/">rosewood cafe</a><br>
+                            <a target="_blank" href="http://www.spoonerberries.com/harvest-festival/">Spooner farms page</a><br>
+                            <a target="_blank" href="https://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/4/dd/4dd99e26-c51d-5f1d-9b7e-764117e8a318/596e1e41b1074.image.jpg?resize=1200%2C800">Pumpkin title photo</a><br>
+                            <a target="_blank" href="https://www.tacomahaunts.com/">Haunted house webpage</a><br>
+                            <a target="_blank" href="https://www.eventbrite.com/e/frighthouse-station-tickets-69194569821?aff=tacomahauntstickets">Frighthouse station ticket info</a><br>
+                            <a target="_blank" href="https://www.youtube.com/watch?v=p-grRJoZOhg#action=share">Frighthouse video</a><br>
+                            <a target="_blank" href="https://www.cookstavern.com/">Cook's Tavern</a><br>
+                            <a target="_blank" href="http://rosewoodcafe.com/">Rosewood Cafe</a><br>
                             <a target="_blank" href="http://thanbrothers.com/#/">Pho Than Brothers</a><br>
-                            <a target="_blank" href="https://www.epicurious.com/recipes/food/views/spiced-pumpkin-bread-840">pumpkin bread photo</a><br>
-                            <a target="_blank" href="https://www.livewellbakeoften.com/the-best-carrot-cake-recipe/">carrot cake recipe</a><br>
-                            <a target="_blank" href="https://bakingamoment.com/carrot-cake-with-cream-cheese-frosting/">carrot cake image</a><br>
-                            <a target="_blank" href="https://assets.parents.com/s3fs-public/styles/fp_1x1_1080/public/images/2018-10/trick%20or%20treating%20kids.jpg?jd4YN7k8iwmyKk4vIX93fD0t5qYjfOlr&h=ea95bb15">trick or treat image</a><br>
+                            <a target="_blank" href="https://www.epicurious.com/recipes/food/views/spiced-pumpkin-bread-840">Pumpkin bread photo</a><br>
+                            <a target="_blank" href="https://www.livewellbakeoften.com/the-best-carrot-cake-recipe/">Carrot cake recipe</a><br>
+                            <a target="_blank" href="https://bakingamoment.com/carrot-cake-with-cream-cheese-frosting/">Carrot cake image</a><br>
+                            <a target="_blank" href="https://assets.parents.com/s3fs-public/styles/fp_1x1_1080/public/images/2018-10/trick%20or%20treating%20kids.jpg?jd4YN7k8iwmyKk4vIX93fD0t5qYjfOlr&h=ea95bb15">Trick or treat image</a><br>
                             <a target="_blank" href="https://studiodiy.com/2016/10/05/diy-soda-bottle-costumes/">Soda Bottle Costumes image and website</a> <br>
-                            <a target="_blank" href="https://www.fairfieldworld.com/project/sashimi-sushi-roll-easy-diy-halloween-costume/">Sashimi Costume and website</a>
-                            <a target="_blank" href="https://www.pinterest.com/pin/222294931586895572/">Boba tea costume website and image</a>
+                            <a target="_blank" href="https://www.fairfieldworld.com/project/sashimi-sushi-roll-easy-diy-halloween-costume/">Sashimi Costume and website</a><br>
+                            <a target="_blank" href="https://www.pinterest.com/pin/222294931586895572/">Boba tea costume website and image</a> <br>
+                            <a target="_blank" href="https://shop.equalexchange.coop/collections/chocolate/products/organic-milk-chocolate-minis-43-countertop-display">Equal Exchange website and photo</a><br>
+                            <a target="_blank" href="https://www.huffpost.com/entry/7-ethical-affordable-choc_b_12587134?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZWNvc2lhLm9yZy8&guce_referrer_sig=AQAAANVE2RiMf3L6nIUDxh85NPoB1SZxSJXaAw-TK6ijuuzIF89WGsEtJe5ngSRsK6QQtTFGMW36DM0h-d2HZUEJ-Rvgyei0e10RqqBrcxrH1c4oUcKMwMcL14rXjVZzs_gHYlbvQOVrhdimtyo-flrdHtr55YiIOIfFo3C9woi_-e4z">Article on Ethical Candy</a><br>
+                            <a target="_blank" href="https://www.sees.com/halloween-candy/double-trouble-lollypop-bundle/200272.html?cgid=halloween-candy">See's Candy Lollypops</a> <br>
+                            <a target="_blank" href="https://www.lakechamplainchocolates.com/chocolate/bulk-chocolates/bulk-milk-chocolate-squares">Lake Champlain Milk Chocolate</a> <br>
+                            <a target="_blank" href="https://www.tripsavvy.com/where-to-trick-or-treat-in-tacoma-2965036">Trip Savvy Trick or Treat Article</a>
                       </div>
-                      <span>California Sizzles by the Junior League of Pasadena, Inc.</span><br>
-                   <br>
-               <br>
-              https://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/
-              <br>v3/editorial/4/dd/4dd99e26-c51d-5f1d-9b7e-764117e8a318/596e1e41b1074.image.jpg?resize=1200%2C800 (pumpkin title photo) <br>
-            https://www.tacomahaunts.com/ (haunted house webpage) <br>
-          https://www.eventbrite.com/e/frighthouse-station-tickets-69194569821?aff=tacomahauntstickets (frighthouse station ticket info) <br>
-        https://www.youtube.com/watch?v=p-grRJoZOhg#action=share (frighthouse video)<br>
-      https://www.cookstavern.com/ (cooks tavern)<br>
-    http://rosewoodcafe.com/ (rosewood cafe)<br>
-  http://thanbrothers.com/#/ (Pho Than Brothers)<br>
-https://www.epicurious.com/recipes/food/views/spiced-pumpkin-bread-840 (pumpkin bread photo)<br>
-California Sizzles by the Junior League of Pasadena, Inc.<br>
-https://www.livewellbakeoften.com/the-best-carrot-cake-recipe/ (carrot cake recipe)<br>
-https://bakingamoment.com/carrot-cake-with-cream-cheese-frosting/ (carrot cake image)<br>
-https://assets.parents.com/s3fs-public/styles/fp_1x1_1080/public/images/2018-10/trick%20or%20treating%20kids.jpg?jd4YN7k8iwmyKk4vIX93fD0t5qYjfOlr&h=ea95bb15 (trick or treat image)</p>
-        </div>
-  </div>
-
+                      <span>California Sizzles by the Junior League of Pasadena, Inc. (A book, not a clickable link)</span><br>
       </body>
 </html>
