@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="formstyle.css">
+  </head>
+  <body>
+      <h1>Choose your fighter</h1>
+      <form action="fighterresults.html" method="post">
+        <span>What is their hair color?</span>
+        <br>
+        <input id="hair1"type="radio" name="haircolor" value="blonde"> Blonde
+        <input id="hair2"type="radio" name="haircolor" value="brunette"> Brunette
+        <input id="hair3"type="radio" name="haircolor" value="redhead"> Redhead
+        <input id="hair4"type="radio" name="haircolor" value="black"> Black hair
+        <br><img id="hairpic" height="70" width="45" src="blonde.jpg" alt="blonde hair">
+        <img id="hairpic" height="70" width="45" src="brown.jpg" alt="brown hair">
+        <br>
+        <br>
+        <span>Beard?</span>
+        <label for="beard">yes</label>
+        <input id="beard" type="radio" name="beard">
+        <label for="nobeard">no</label>
+        <input id="nobeard" type="radio" name="beard" checked>
+        <br>
+        <span>Glasses?</span>
+        <label for="glasses">yes</label>
+        <input id="glasses" type="radio" name="glasses" value="glassesyes">
+        <label for="noglasses">no</label>
+        <input id="noglasses" type="radio" name="glasses" value="glassesno" checked>
+        <br>
+        <span>What is their age?</span>
+        <label for="years">Age:</label>
+        <input min=13 max=25 id="years" type="number" name="age" value="15">
+        <br>
+        <span>What is their name?</span>
+        <input type="text" name="age" value="name" maxlength="15">
+      </form>
+      <h3>citations:</h3>
+      <span>https://neilgeorgesalon.files.wordpress.com/2012/08/blonde-hair-color-shades.jpg</span> <br>
+      <span>https://content.latest-hairstyles.com/wp-content/uploads/honey-toned-balayage-brunette-honey-brown.jpg</span>
+  </body>
+</html>
