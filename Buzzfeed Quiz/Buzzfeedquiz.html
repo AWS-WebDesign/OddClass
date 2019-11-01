@@ -1,71 +1,508 @@
 <!DOCTYPE html>
-<h1>Which member of Mystery Inc. are you? </h1>
 
-<form class="" action="index.html" method="post">
-  <span>First off, what is your name?</span> <br>
-  <input type="text" id="nameinput" maxlength=15 value="Name"> <br>
-  <h3>You're having a picnic. What are you eating?</h3>
-  <div class="scoobydiv">
-    <img height="150" width="150" src="scoob.jpg" alt="Scooby Snacks"> <br>
-    <span>Scooby Snacks</span> <br>
-    <input type="checkbox" name="scoobysnack" value="scoobysnack" id="scoobysnack"><br>
-  </div>
-  <div class="pizzadiv">
-    <img height="150" width="150" src="scoobpizza.jpg" alt="Scooby holding pizza slice"> <br>
-    <span>Pizza</span> <br>
-    <input type="checkbox" name="pizza" value="pizza" id="pizza"> <br>
-  </div>
-  <div class="everythingdiv">
-    <img height="150" width="150" src="sandwich.png" alt="A scooby doo everything sandwich"> <br>
-    <span>Everything Sandwich</span><br>
-    <input type="checkbox" name="everything" value="everything" id="everything"> <br>
+<!--This is the html document for my buzzfeed quiz. It holds all of the elements and content of this quiz, though the styling takes place
+within my css file. This quiz will function so that the user will input their name and answer five questions asked of them. When they click submit,
+the submit button will dissapear and a text box will appear that will tell them which Mystery Inc. character from the show 'scooby doo' they are.
+The possible characters are Shaggy, Velma, Scooby, Fred, or Daphne. -->
+<html lang="en" dir="ltr">
+<!--This is the meta data. The title is how the webpage tab will appear. The link links this to a set of google fonts code so that I can
+use the font "Kavoon" in my project. The other link links to the Buzzfeed.css so that the styling from the css doc can apply to my html document. -->
+  <head>
+    <meta charset="utf-8">
+    <title>Scooby doo Buzzfeed Quiz!</title>
+    <link href='https://fonts.googleapis.com/css?family=Kavoon' rel='stylesheet'>
+    <link rel="stylesheet" href="Buzzfeed.css">
+  </head>
+  <!--This is the body. All of the main content that will display on the page, including the script with javascript functions (which won't display)
+is housed within 'body'.-->
+  <body>
+    <!--This is h1, which is essentially a large header. It has an id of 'titlebig' because it is the title for the webpage, as can be seen
+  in the css document. -->
+      <h1 id="titlebig">Which member of Mystery Inc. are you? </h1>
+<!--Below is a form. It is the place where the user will input all of their answers to the buzzfeed quiz. It also
+has all of the questions and other content inside of it, including the photos and text that correspond with certain answers.
+There is no action attribute because the user data stays within the webpage and isn't sent to an external document.
+ The method of post means that all of the results that the user inputs will be stored in a seperate, private file. -->
+      <form method="post">
+        <!--Here is a span asking the user a question. Its id of name intro will be consistent for all of the questions that are asked of the user.
+      A span is basically a section of text that is shorter than a paragraph. The element <br> makes a line break, and works basically as a return tab.
+      It is used here for spacing purposes so that the input that comes next appears one line below it.
+      </table>-->
+        <span id="nameintro">First off, what is your name?</span> <br>
+        <!--This is an input element. Input is where the user puts in information to interact with the form.
+      The type attribute is 'text' which means that this particular input will appear as a text box as seen in standard forms.
+    The id is used later in the javascript to cite this to collect the data that the user inputs. The maxlength attribute means
+  that the text that the user inputs cannot be more than 15 characters long. The value attribute describes what will show up
+in the text box when it is defaulted. In this case, the text box will have the word "User" inside of it when the page is loaded. A <br>
+element is used for spacing. -->
+        <input type="text" id="nameinput" maxlength=15 value="User"> <br>
+<!--Everything within this div applies to the first question in the quiz. A div groups elements together and makes it so that styles can
+be applied to a group of attributes easily. I made a div for the whole question so that it is divided neatly and so that I can add more spacing
+between the questions by changing the 'margin' attribute in the css document.  -->
+        <div class="q1">
+          <!--This is an h3, a type of header that is smaller than h1. It has the same id of nameintro. This is one
+        of the questions that will be asked of the user.-->
+                <h3 id="nameintro">You're having a picnic. What are you eating?</h3>
+                <!--Below is the div for the first possible user answer. All of the content is within a div so that I can group it together,
+              and also so that I can define everything within the class 'scoobydiv' as blocks and make them float left (in the css document) so that
+            they all line up next to each other. The elements within the div below will appear as a box with an image, a small line of text that says
+          "scooby snacks" and an input button. -->
+                <!--This answer will add points to the variable 'scoob' if clicked.-->
+                <div class="scoobydiv">
+                  <!--The label below applies to the input 'scoobysnack' as seen below. The content of the label
+                is an image called 'scoob.jpg' as seen in my buzzfeed quiz folder. The height and width attributes control the height and width of the image.
+              The 'alt' attribute will appear if the image doesn't load. The span is just a regular span, but I used it to label the input. By putting the image
+            and span as content of the label, when the user clicks on any part of the label or input (including the image and text), the input will be checked. The
+          label element has the attribute 'for' to describe which input it applies to. It applies to the input with an id of 'scoobysnack'.-->
+                  <label for="scoobysnack">
+                  <img height="150" width="150" src="scoob.jpg" alt="Scooby Snacks"> <br>
+                  <span>Scooby Snacks</span> <br> </label>
+                  <!--This is the input for this box. It has a type of checkbox which means that it'll appear as a small box that will turn blue with a checkmark
+                when the content is clicked (including when the label is clicked). The value and name are practically useless in a checkbox as no content appears
+              as a result of these controls, but I kept it in originally because I was unsure if I was going to make code that applied to the input's value or name.
+            I made the name, value and id the same so that if a control applies to the value rather than the id, it will not be an issue.  -->
+                  <input type="checkbox" name="scoobysnack" value="scoobysnack" id="scoobysnack"><br>
+                </div>
 
-  </div>
-  <div class="icecreamdiv">
-    <img height="150" width="150" src="icecream.jpg" alt="Scooby doo ice cream"> <br>
-    <span>Ice cream</span><br>
-    <input type="checkbox" name="icecream" value="icecream" id=icecream><br>
+                <!--All of the inputs below work in the same way as the first 'scooby snacks' input does. I set the height of all of the images to be 150 and the same with
+              the width so that they are somewhat uniform in their appearance, even if by doing so some of the images are slightly distorted. I describe over each
+            div which character points the input is associated with. For example, if the 'pizza' input is clicked, points will be added to the variable velma, so the
+          user is more likely to be told they are like velma in the end. This data is collected through the action 'getElementById' in javascript. As you can see, I have
+        five variables, one that corresponds with each possible output for a character. -->
+                  <!--This answer will add points to the variable 'velma' if clicked.-->
+                <div class="scoobydiv">
+                  <label for="pizza">
+                  <img height="150" width="150" src="scoobpizza.jpg" alt="Scooby holding pizza slice"> <br>
+                  <span>Pizza</span> <br></label>
+                  <input type="checkbox" name="pizza" value="pizza" id="pizza"> <br>
+                </div>
+                  <!--This answer will add points to the variable 'fred' if clicked.-->
+                <div class="scoobydiv">
+                  <label for="everything">
+                  <img height="150" width="150" src="sandwich.png" alt="A scooby doo everything sandwich"> <br>
+                  <span>Everything Sandwich</span><br>
+                  </label>
+                  <input type="checkbox" name="everything" value="everything" id="everything"> <br>
+                </div>
+                  <!--This answer will add points to the variable 'daph' if clicked.-->
+                <div class="scoobydiv">
+                  <label for="icecream">
+                  <img height="150" width="150" src="icecream.jpg" alt="Scooby doo ice cream"> <br>
+                  <span>Ice cream</span><br> </label>
+                  <input type="checkbox" name="icecream" value="icecream" id=icecream><br>
+                </div>
+                  <!--This answer will add points to the variable 'shag' if clicked.-->
+                <div class="scoobydiv">
+                  <label for="buffet">
+                  <img height="150" width="150" src="buffet.jpg" alt="Scooby doo with a lot of food"><br>
+                  <span>Buffet!</span> <br></label>
+                  <input type="checkbox" name="buffet" value="buffet" id="buffet"><br>
+                </div><br>
+            </div>
+            <!--These breaks are to add spacing between the two questions. -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--This div applies to the next question, question 2. It has all of the same styling as the first question. I describe
+      which variable will be affected by each decision in the commenting below. Don't forget that each 'scoobydiv' applies to
+    each individual checkbox answer (input). So, for this question (and all the others), the user will have five possible boxes that they
+  can check.  -->
+        <div class="q2">
 
-  </div>
-  <div class="buffetdiv">
-    <img height="150" width="150" src="buffet.jpg" alt="Scooby doo with a lot of food"><br>
-    <span>Buffet!</span> <br>
-    <input type="checkbox" name="buffet" value="buffet" id="buffet"><br>
-  </div><br>
-  <br>
-  <br>
-  <h3>Someone is acting suspicious! Do you:</h3>
-  <div class="investdiv">
-    <img height="150" width="150" src="invest.jpg" alt="The gang, police, and a bad guy tied up"><br>
-    <span>Go talk to them casually</span> <br>
-    <input type="checkbox" name="invest" value="invest" id="invest"><br>
-  </div> <br>
-  <div class="cluesdiv">
-    <img height="150" width="150" src="velma.jpg" alt="Velma with a computer and the gang"><br>
-    <span>Look for clues first!</span> <br>
-    <input type="checkbox" name="clues" value="clues" id="clues"><br>
-  </div> <br>
-  <div class="rundiv">
-    <img height="150" width="150" src="run.jpg" alt="Velma carrying the gang away"><br>
-    <span>Run and hide, duh!</span> <br>
-    <input type="checkbox" name="run" value="run" id="run"><br>
-  </div> <br>
-  <div class="gatherdiv">
-    <img height="150" width="150" src="" alt=""><br>
-    <span>Gather the gang together and discuss!</span> <br>
-    <input type="checkbox" name="run" value="run" id="run"><br>
-  </div> <br>
+                <h3 id="nameintro">Someone is acting suspicious! Do you:</h3>
+                  <!--This answer will add points to the variable 'scoob' if clicked.-->
+                <div class="scoobydiv">
+                  <label for="invest">
+                  <img height="150" width="150" src="invest.jpg" alt="The gang, police, and a bad guy tied up"><br>
+                  <span>Go talk to them casually</span> <br></label>
+                  <input type="checkbox" name="invest" value="invest" id="invest"><br>
+                </div>
+                  <!--This answer will add points to the variable 'velma' if clicked.-->
+                <div class="scoobydiv">
+                  <label for="clues">
+                  <img height="150" width="150" src="velma.jpg" alt="Velma with a computer and the gang"><br>
+                  <span>Look for clues first!</span> <br></label>
+                  <input type="checkbox" name="clues" value="clues" id="clues"><br>
+                </div>
+                  <!--This answer will add points to the variable 'shag' if clicked.-->
+                <div class="scoobydiv">
+                  <label for="run">
+                  <img height="150" width="150" src="run.jpg" alt="Velma carrying the gang away"><br>
+                  <span>Run and hide, duh!</span> <br></label>
+                  <input type="checkbox" name="run" value="run" id="run"><br>
+                </div>
+                  <!--This answer will add points to the variable 'fred' if clicked.-->
+                <div class="scoobydiv">
+                  <label for="gather">
+                  <img height="150" width="150" src="gather.jpg" alt="The gang gathering around a table"><br>
+                  <span>Gather the gang!</span> <br></label>
+                  <input type="checkbox" name="gather" value="gather" id="gather"><br>
+                </div>
+                  <!--This answer will add points to the variable 'daph' if clicked.-->
+                <div class="scoobydiv">
+                  <label for="attack">
+                  <img height="150" width="150" src="fight.jpg" alt="Daphne and Velma in fighter costumes"><br>
+                  <span>Attack them head on!</span> <br></label>
+                  <input type="checkbox" name="attack" value="attack" id="attack"><br>
+                </div> <br>
+              <br><br>
 
-</form>
+          </div>
+<!--This has the same styling as the previous questions. -->
+        <div class="q3">
+                <h3 id="nameintro">You're caught in the enemy's trap! What's your response?</h3>
+                  <!--This answer will add points to the variable 'shag' if clicked.-->
+                <div class="scoobydiv">
+                  <label for="help">
+                  <img height="150" width="150" src="shaggy.jpg" alt="Shaggy caught in a trap and the gang"><br>
+                  <span>Call for help!</span> <br></label>
+                  <input type="checkbox" name="help" value="help" id="help"><br>
+                </div>
+                  <!--This answer will add points to the variable 'fred' if clicked.-->
+                <div class="scoobydiv">
+                  <label for="wiggle">  <img height="150" width="150" src="log.jpg" alt="Daphne caught in a log trap"> <br>
+                  <span>Try to wiggle out of it!</span> <br> </label>
+                  <input type="checkbox" name="wiggle" value="wiggle" id="wiggle"><br>
+                </div>
+                  <!--This answer will add points to the variable 'scoob' if clicked.-->
+                <div class="scoobydiv">
+                  <label for="cryscoob">
+                  <img height="150" width="150" src="cryscoob.jpg" alt="Scooby and Shaggy crying"><br>
+                  <span>Cry about it and give up!</span> <br></label>
+                  <input type="checkbox" name="cryscoob" value="cryscoob" id="cryscoob"><br>
+                </div>
+                  <!--This answer will add points to the variable 'daph' if clicked.-->
+                <div class="scoobydiv">
+                  <label for="bargain">
+                  <img height="150" width="150" src="bargain.jpg" alt="Daphne talking to the bad guys caught"><br>
+                  <span>Bargain with the enemy!</span> <br></label>
+                  <input type="checkbox" name="bargain" value="bargain" id="bargain"><br>
+                </div>
+                  <!--This answer will add points to the variable 'velma' if clicked.-->
+                <div class="scoobydiv">
+                  <label for="vthink">
+                  <img height="150" width="150" src="velmathink.jpg" alt="Velma with some equipment"><br>
+                  <span> Think about a solution!</span> <br></label>
+                  <input type="checkbox" name="vthink" value="vthink" id="vthink"><br>
+                </div> <br>
+                <br>
 
-<h3>Sources</h3>
-<a target=_blank href="https://i.pinimg.com/736x/5c/ec/66/5cec66f299da3bd9ed2cf4299ee8d921.jpg">Scooby Snacks photo</a>
-<a target=_blank href="https://fyeahscoobydoomi.files.wordpress.com/2014/03/vlcsnap-00126.jpg">Pizza pic</a>
-<a target=_blank href="http://www.thedrinksbusiness.com/wordpress/wp-content/uploads/2016/02/Shaggy_and_Scooby_eating_a_huge_sandwich-640x403.png">Scooby Doo sandwich</a>
-<a target=_blank href="https://www.desicomments.com/wp-content/uploads/2017/02/Scooby-Doo-And-Shaggy-Holding-Ice-Cream.jpg">Ice cream image</a>
-<a target=_blank href="https://i.pinimg.com/736x/39/b1/41/39b1413417321a563347baf24b15a74a--shaggy-and-scooby-scooby-doo.jpg">Scooby Buffet photo</a>
-<a target=_blank href="http://www.ravenousmonster.com/wp-content/uploads/2014/04/scooby-doo-villain-unmasked.jpg">Scooby doo bad guy caught image</a>
-<a target=_blank href="https://s.hswstatic.com/gif/how-scooby-doo-works-2.jpg">Scooby doo investigation photo</a>
-<a target=_blank href="http://images4.fanpop.com/image/photos/17100000/Scooby-Doo-Where-Are-You-Hassle-in-the-Castle-1-03-scooby-doo-17175982-1067-800.jpg">Scooby doo running away image</a>
-<a target=_blank href=""></a>
-<a target=_blank href=""></a>
+          </div>
+<!--This has the same styling as the previous questions. One note is that I used gifs instead of images for two of the
+inputs. I will note these below. -->
+          <div class="q4">
+            <h3 id="nameintro">You've solved the mystery! What do you do now?</h3>
+  <!--This answer will add points to the variable 'daph' if clicked.-->
+            <div class="scoobydiv">
+              <label for="party">
+              <img height="150" width="150" src="party.png" alt="The scooby doo gang with batman"><br>
+              <span>Party!</span> <br></label>
+              <input type="checkbox" name="party" value="party" id="party"><br>
+            </div>
+  <!--This answer will add points to the variable 'fred' if clicked.-->
+            <div class="scoobydiv">
+              <label for="plan">
+              <img height="150" width="150" src="plan.jpg" alt="An orange flower"><br>
+              <span>Plan for the next adventure!</span> <br></label>
+              <input type="checkbox" name="plan" value="plan" id="plan"><br>
+            </div>
+  <!--This answer will add points to the variable 'velma' if clicked.-->
+            <div class="scoobydiv">
+              <label for="read">
+              <img height="150" width="150" src="read.png" alt="An orange flower"><br>
+              <span>Go home and read!</span> <br></label>
+              <input type="checkbox" name="read" value="read" id="read"><br>
+            </div>
+  <!--This answer will add points to the variable 'scoob' if clicked.-->
+            <div class="scoobydiv">
+              <label for="eat">
+                <!--The image below has a src attribute (which describes what image it is) of 'eat.gif'.
+              This will show up as a small animation, or essentially, a collection of images looping quickly and repeatedly
+            to make a video. In this image, Scooby and shaggy will appear to have moving hands.-->
+              <img height="150" width="150" src="eat.gif" alt="An orange flower"><br>
+              <span>Eat in celebration!</span> <br></label>
+              <input type="checkbox" name="eat" value="eat" id="eat"><br>
+            </div>
+<!--This answer will add points to the variable 'shag' if clicked.-->
+            <div class="scoobydiv">
+              <label for="nap">
+                <!--This image has a src attribute that is nap.gif which will appear, like before, as movement on the page.
+              In this one, the people sleeping will move up and down slightly. Using a gif is the same as using an image - no
+            special coding is needed. -->
+              <img height="150" width="150" src="nap.gif" alt="An orange flower"><br>
+              <span>Take a well deserved nap!</span> <br></label>
+              <input type="checkbox" name="nap" value="nap" id="nap"><br>
+            </div>
+          </div>
+          <!--This question has the same styling and works the same as the previous questions.-->
+
+          <div class="q5">
+            <h3 id="nameintro">What is your favorite color?</h3>
+<!--This answer will add points to the variable 'velma' if clicked.-->
+            <div class="scoobydiv">
+              <label for="orange">
+              <img height="150" width="150" src="orange.jpg" alt="An orange flower"><br>
+              <span>Orange!</span> <br></label>
+              <input type="checkbox" name="orange" value="orange" id="orange"><br>
+            </div>
+<!--This answer will add points to the variable 'fred' if clicked.-->
+            <div class="scoobydiv">
+              <label for="blue">
+              <img height="150" width="150" src="blue.jpg" alt="A blue scooby doo villain"><br>
+              <span>Blue!</span> <br></label>
+              <input type="checkbox" name="blue" value="blue" id="blue"><br>
+            </div>
+          <!--This answer will add points to the variable 'daph' if clicked.-->
+          <div class="scoobydiv">
+            <label for="purple">
+            <img height="150" width="150" src="purple.jpg" alt="A jewel necklace, as seen in scooby doo"><br>
+            <span>Purple!</span> <br></label>
+            <input type="checkbox" name="purple" value="purple" id="purple"><br>
+          </div>
+          <!--This answer will add points to the variable 'shag' if clicked.-->
+        <div class="scoobydiv">
+          <label for="green">
+          <img height="150" width="150" src="green.jpg" alt="The mystery machine"><br>
+          <span>Green!</span> <br></label>
+          <input type="checkbox" name="green" value="green" id="green"><br>
+        </div>
+          <!--This answer will add points to the variable 'scoob' if clicked.-->
+        <div class="scoobydiv">
+          <label for="rainbow">
+          <img height="150" width="150" src="rainbow.jpg" alt="The whole scooby gang together"><br>
+          <span>All the colors!</span> <br></label>
+          <input type="checkbox" name="rainbow" value="rainbow" id="rainbow"><br>
+        </div>
+
+          </div>
+          <!--This is some content at the end of the quiz which is shown right before the submit button to submit the quiz. -->
+        <h3>Now, let's see which Mystery Inc. Member you are! Click 'submit' below.</h3>
+        <!--This is a 'button' input which means that, when clicked, it'll do something. In this case the 'onclick' attribute
+      triggers the function 'showInput()' which is a javascript function. The javascript function, as seen below, will count the answers
+    and display in the paragraph id='finalanswer' which mystery inc character they are. The value is how the button will appear, which is
+  as words saying 'SUBMIT!'. The id of submit is cited down below in the javascript document. -->
+        <input id="submit" type="button" value="SUBMIT!" onclick="showInput();">
+      </form>
+      <!--This information is outside the form. It has an initial display of 'none' which means that it'll be hidden. However, I have
+    a javascript code that changes this from 'none' to 'block' after the submit button is clicked. The id of nameoutput will correspond
+  with what the user put in as their name. If they don't put in anything, it'll appear as 'user'. The second span will display text saying
+which gang member they are. The id of this span is 'gangmember'. The next span with the class 'resetspecs' and id of 'resetbutton ' is a link that
+will reset the page. I used the class of resetspecs to define the styling of the reset button, while I used the id to cite it in my javascript so that it'll
+appear only when the submit button is clicked. It links to the html document, which effectively just resets the page. -->
+      <p id="Finalanswer">
+      <span id="nameoutput">user</span>? More like <span id="gangmember"></span> <br> <br>
+      <span class="resetspecs" id="resetbutton"><a href="./Buzzfeedquiz.html">Reset Page!</a></span>
+      </p>
+
+<!--Below are my image sources. They have a target="_blank" so that, when clicked, the anchor (or hyperlink) will appear in a new page. The content of the anchors, which are links,
+will appear as the text that is inside the anchor that I said. The h3 of sources is just to title this area. The breaks are so that each source appears on a new line. -->
+      <h3>Sources</h3>
+      <a target=_blank href="https://i.pinimg.com/736x/5c/ec/66/5cec66f299da3bd9ed2cf4299ee8d921.jpg">Scooby Snacks image</a> <br>
+      <a target=_blank href="https://fyeahscoobydoomi.files.wordpress.com/2014/03/vlcsnap-00126.jpg">Pizza image</a><br>
+      <a target=_blank href="http://www.thedrinksbusiness.com/wordpress/wp-content/uploads/2016/02/Shaggy_and_Scooby_eating_a_huge_sandwich-640x403.png">Scooby Doo sandwich image</a><br>
+      <a target=_blank href="https://www.desicomments.com/wp-content/uploads/2017/02/Scooby-Doo-And-Shaggy-Holding-Ice-Cream.jpg">Ice cream image</a><br>
+      <a target=_blank href="https://i.pinimg.com/736x/39/b1/41/39b1413417321a563347baf24b15a74a--shaggy-and-scooby-scooby-doo.jpg">Scooby Buffet image</a><br>
+      <a target=_blank href="http://www.ravenousmonster.com/wp-content/uploads/2014/04/scooby-doo-villain-unmasked.jpg">bad guys caught image</a><br>
+      <a target=_blank href="https://s.hswstatic.com/gif/how-scooby-doo-works-2.jpg">Scooby doo investigation image</a><br>
+      <a target=_blank href="http://images4.fanpop.com/image/photos/17100000/Scooby-Doo-Where-Are-You-Hassle-in-the-Castle-1-03-scooby-doo-17175982-1067-800.jpg">Scooby doo running away image</a><br>
+      <a target=_blank href="https://static.comicvine.com/uploads/original/0/40/1796371-sd614b019.jpg">Scooby doo group gathering image</a><br>
+      <a target=_blank href="https://orig00.deviantart.net/d306/f/2012/128/1/d/daphne_blake_y_velma_wrestling_3_by_avispaneitor-d4yz6e2.jpg">Daphne and Velma in fighter costumes image</a><br>
+      <a target=_blank href="http://radioactive-studios.com/biohazard-films/files/2014/05/Scooby-ThatsNoGhost-08-VelmaKidnapped-e1400823562563.jpg
+      ">Velma tied up on a log image</a><br>
+      <a target=_blank href="http://radioactive-studios.com/biohazard-films/files/2014/05/Scooby-ThatsNoGhost-03-MrLeech-e1400822789422.jpg">Velma talking to bad guys tied up image</a><br>
+      <a target=_blank href="https://wendylovesjesus.files.wordpress.com/2016/09/apeman1.jpg">Shaggy caught in a trap image</a><br>
+      <a target=_blank href="http://content.internetvideoarchive.com/content/photos/7068/29686129_.jpg">Scooby and shaggy crying image</a><br>
+      <a target=_blank href="http://www.velmadinkley.com/bk_velma.jpg">Velma with some equipment image</a><br>
+      <a target=_blank href="http://www.hippymotors.co.uk/s2g/hippymotors/giantscoobydoovinylcampervancaravanstickerorange.jpg">Orange flower image</a> <br>
+      <a target=_blank href="https://wendylovesjesus.files.wordpress.com/2016/09/space-kook1.jpg">Scooby doo blue villain image</a><br>
+      <a target=_blank href="http://www.caps.media/201/2-big-top-scooby-doo/full/big-top-scooby-doo-disneyscreencaps.com-47.jpg">Jewel image</a><br>
+      <a target=_blank href="http://cps-static.rovicorp.com/2/Open/Warner%20Brothers%20Distribution/What%27s%20New%20Scooby-Doo/Season%203/_4by3/_derived_jpg_q90_600x800_m0/WhatsNewScoobyDoo-Season3-Still1.jpg?partner=allmovie_soap">The whole scooby gang together image</a> <br>
+      <a target=_blank href="https://www.tinkercad.com/images/acnMvaaOBUP/t725.jpg?t=55971f79">The mystery machine image</a><br>
+      <a target=_blank href="https://68.media.tumblr.com/859c43c70678335d28937806e0bc4cca/tumblr_o9lvlqCbaG1s2wio8o1_500.gif">Fred, Shaggy and Scooby napping gif</a><br>
+      <a target=_blank href="http://4.bp.blogspot.com/-LKsHkTfEWsk/UoLlf5irgvI/AAAAAAAAGAU/e2CMUOBDH0M/s1600/The-Gang-with-Batman-scooby-doo-32614971-936-705.jpg">The gang with batman image</a><br>
+      <a target=_blank href="https://upload.wikimedia.org/wikipedia/en/9/9a/Scooby-gang-1969.jpg">Scooby doo gang gathered around a book image</a><br>
+      <a target=_blank href="http://images6.fanpop.com/image/photos/32500000/Tales-of-Terror-scooby-doo-32575657-940-707.png">Scooby and Shaggy reading a book image</a><br>
+      <a target=_blank href="http://pa1.narvii.com/6279/dd01d4e9db07dfc9ed644fc7a76dc4c4af64008e_hq.gif">Scooby and Shaggy digging in to some hamburgers gif</a><br>
+      <a target=_blank href=""></a><br>
+      <a target=_blank href=""></a><br>
+<!--Below is a script with a language 'javascript' which essentially lets me have javascript interact with the content of this file, even though it is an html file and
+not a javascript file. The function of 'showInput()' is activated when the submit button is clicked (because onclick="showInput();".)-->
+      <script language="JavaScript">
+        function showInput() {
+          //This code below means that within the document (innerHTML), the element with the id of 'nameoutput' (which says 'User'?) is equal to //
+          //the value of the element with id of 'nameinput', which is an input element where the user originally put in their name.
+          //
+          document.getElementById("nameoutput").innerHTML =
+          document.getElementById("nameinput").value;
+            //These variables have a count of 0 because when the document is first loaded, all of the variables should be 0. When points are added to each variable,//
+              //the points impact which mystery gang member the user will be. If the variable is equal to 3 or higher, the user will be that mystery gang member. //
+          var shag = 0;
+          var velma = 0;
+          var scoob = 0;
+          var daph = 0;
+          var fred = 0;
+
+  //This code says that if the element with the id 'scoobysnack', which is an input, is checked by the user (it's a checkbox), then the//
+    //variable 'scoob' is increased. All of the if statements below affect the variable scoob and corresponds with the checkboxes that are the 'scooby doo' answers. //
+      //These are if statements, which only happen if the checkbox is checked. Otherwise, they do not. //
+          if (document.getElementById("scoobysnack").checked)
+          {
+            scoob = scoob+1;
+          }
+          if (document.getElementById("invest").checked)
+          {
+            scoob = scoob+1;
+          }
+          if (document.getElementById("cryscoob").checked)
+          {
+            scoob = scoob+1;
+          }
+          if (document.getElementById("rainbow").checked)
+          {
+            scoob = scoob+1;
+          }
+          if (document.getElementById("eat").checked)
+          {
+            scoob = scoob+1;
+          }
+  //This works the same as the scooby doo answers, but applies to the variable velma, which makes the user more likely to be velma. //
+
+          if (document.getElementById("pizza").checked)
+          {
+            velma = velma+1;
+          }
+          if (document.getElementById("clues").checked)
+          {
+            velma = velma+1;
+          }
+          if (document.getElementById("vthink").checked)
+          {
+            velma = velma+1;
+          }
+          if (document.getElementById("orange").checked)
+          {
+            velma = velma+1;
+          }
+          if (document.getElementById("read").checked)
+          {
+            velma = velma+1;
+          }
+  //These if statements work the same as above, but apply to the variable shag which makes the user more likely to be shaggy.//
+
+          if (document.getElementById("buffet").checked)
+          {
+            shag = shag+1;
+          }
+          if (document.getElementById("run").checked)
+          {
+            shag = shag+1;
+          }
+          if (document.getElementById("help").checked)
+          {
+            shag = shag+1;
+          }
+          if (document.getElementById("green").checked)
+          {
+            shag = shag+1;
+          }
+          if (document.getElementById("nap").checked)
+          {
+            shag = shag+1;
+          }
+//These if statements work the same as above, but apply to the variable velma which makes the user more likely to be velma.//
+
+          if (document.getElementById("icecream").checked)
+          {
+            daph = daph+1;
+          }
+          if (document.getElementById("attack").checked)
+          {
+            daph = daph+1;
+          }
+          if (document.getElementById("bargain").checked)
+          {
+            daph = daph+1;
+          }
+          if (document.getElementById("purple").checked)
+          {
+            daph = daph+1;
+          }
+          if (document.getElementById("party").checked)
+          {
+            daph = daph+1;
+          }
+//These if statements work the same as above, but apply to the variable fred which makes the user more likely to be Fred.//
+
+          if (document.getElementById("everything").checked)
+          {
+            fred = fred+1;
+          }
+          if (document.getElementById("gather").checked)
+          {
+            fred = fred+1;
+          }
+          if (document.getElementById("wiggle").checked)
+          {
+            fred = fred+1;
+          }
+          if (document.getElementById("blue").checked)
+          {
+            fred = fred+1;
+          }
+          if (document.getElementById("plan").checked)
+          {
+            fred = fred+1;
+          }
+
+//The code below are if statements that say when the variable is greater than 2 (equal to 3, 4 or 5), the element with the //
+//id 'gangmember' will have the content of 'Fred, no doubt!' or whatever the content says below. This effectively shows the //
+//user if they are fred, shaggy, velma, scooby doo, or daphne. I used else ifs so that when the first if statement is done, if that doesn't //
+//work it proceeds to check the next if statement, going through all the if statements until one of them works. //
+//The else control means that if none of the variables are greater than 2, the text in the span with the id of gangmember//
+//will appear as 'no one, you are not a mystery gang member!'. This is somewhat of a 'catch all' so that if they user chooses really //
+//varying answers, they will still get some sort of output. //
+          if (fred > 2) {
+            document.getElementById("gangmember").innerHTML =
+            "Fred, no doubt!"
+          }
+          else if (shag > 2) {
+            document.getElementById("gangmember").innerHTML =
+            "Shaggy, in the flesh!"
+          }
+          else if (velma > 2) {
+            document.getElementById("gangmember").innerHTML =
+            "Velma! Jeepers!"
+          }
+          else if (scoob > 2) {
+            document.getElementById("gangmember").innerHTML =
+            "Scooby dooby doo!"
+          }
+          else if (daph > 2) {
+            document.getElementById("gangmember").innerHTML =
+            "Daphne! Zoinks!"
+          }
+          else {
+            document.getElementById('gangmember').innerHTML = "no one, you are not a mystery gang member!"
+          }
+//This defines the variable of results as the element with the id of 'finalanswer'. This is the answer output. Because the //
+//answer output originally has a display of 'none', when this function is run, this element will have a new display of 'block', which will//
+//show it on the screen.//
+        var results = document.getElementById('Finalanswer');
+        results.style.display = "block"
+//This works the same as the code above, but it applies to the submit button. When this code is run, the submit button will disspear because I //
+//change the display to 'none'. //
+        var submit = document.getElementById('submit');
+        submit.style.display = "none"
+//This defines the element with the id 'resetbutton' as the variable reset. This element is an anchor that links to the webpage, essentially resetting it.//
+//When this code is loaded, the visibility of the reset button will be shown as visible, when before it was hidden. I couldn't toggle the display as I did before //
+//because these are anchor elements and they don't have a display of block, they have a display of inline so they work slightly differently. However, I could toggle the //
+//visibility so that's what I did.//
+        var reset = document.getElementById('resetbutton');
+          reset.style.visibility = "visible"
+
+      }
+      </script>
+
+</body>
+</html>
