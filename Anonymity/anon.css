@@ -1,0 +1,109 @@
+.navbar {
+  display: block;
+  font-size: 40px;
+  text-align: center;
+  width: 103%;
+  padding-left: -30px;
+  padding-right: -30px;
+  margin-left: -8px;
+
+}
+.navbar a {
+  text-decoration: none;
+  padding-left: 9.1%;
+  padding-right: 9.1%;
+  float: left;
+  background-color: Grey;
+  color: Black;
+
+}
+
+.navbar a:hover{
+  background-color: DarkGrey;
+  text-decoration: none;
+  color: Black;
+}
+.extrabiigheader{
+background-color: LightBlue;
+color: black;
+text-align: center;
+font-size: 70px;
+margin-bottom: -100px;
+padding-top: 15px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: DarkGrey;
+}
+.biigheader{
+background-color: LightBlue;
+color:black;
+text-align: center;
+font-size: 50px;
+margin-top: -80px;
+margin-left: -10px;
+margin-right: -10px;
+padding-bottom: 10px;
+
+}
+
+.anonmain {
+  z-index: 0;
+  background-color: LightGrey;
+  font-size: 24px;
+  margin-left: -10px;
+  margin-right: -10px;
+  overflow-x: hidden;
+}
+
+.anonimg {
+  position: absolute;
+  z-index: 1;
+  margin-left: 37%;
+  margin-right: 35%;
+  animation-name: faceanim;
+  animation-duration: 7s;
+  opacity: 0%;
+  margin-bottom: -100;
+
+}
+
+.anonfacetext {
+  z-index: 2;
+  padding-bottom: 200px;
+  margin-top: -400px;
+  margin-left: 25%;
+  margin-right: 20%;
+  margin-bottom: 100px;
+  font-size: 30px;
+  animation-name: textanim;
+  animation-duration: 11s;
+  opacity: 100%;
+  font-size: 50px;
+}
+
+@keyframes faceanim {
+  0% {opacity: 100%;}
+  40% {opacity: 100%;}
+  70% {opacity: 70%;}
+  100% {opacity: 0%;}
+
+}
+
+@keyframes textanim {
+  0% {opacity: 0%;}
+  70% {opacity: 0%;}
+  100% {opacity: 100%;}
+}
+
+.anoncontent {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* The information for the cons document */
