@@ -1,3 +1,4 @@
+/* This is the general styling for the nagivation bar and top of the page */
 .navbar {
   display: block;
   font-size: 40px;
@@ -60,7 +61,7 @@ padding-bottom: 10px;
   margin-right: -10px;
   overflow-x: hidden;
 }
-
+/* This applies to the 'home' part of the anonymity document.*/
 .anonimg {
   position: absolute;
   z-index: 1;
@@ -107,3 +108,31 @@ padding-bottom: 10px;
 }
 
 /* The information for the cons document */
+#downloadbar {
+  margin-top: 50px;
+  position: absolute;
+  z-index: 2;
+  margin-left: -230px;
+}
+
+#downloadbar2 {
+  margin-left: -230px;
+  margin-top: 50px;
+  z-index: 3;
+  position: absolute;
+  animation-name: xmove;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes xmove {
+  0% {width: 0px; height: 50px;}
+  50% {width: 350px; height: 50px;}
+  100% {width: 500px; height: 50px;}
+}
+
+#canvastext {
+  margin-left: 400px;
+
+}
