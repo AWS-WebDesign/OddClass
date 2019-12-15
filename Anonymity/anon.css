@@ -129,6 +129,7 @@ padding-bottom: 10px;
 @keyframes xmove {
   0% {width: 0px; height: 50px;}
   50% {width: 350px; height: 50px;}
+  90% {width: 500px; height: 50px;}
   100% {width: 500px; height: 50px;}
 }
 
@@ -145,4 +146,32 @@ iframe {
 #cyberimg {
   float: right;
   margin-right: 50px;
+  border-style: solid;
+  border-color: DarkGrey;
+  border-width: 5px;
+  border-radius: 3px;
 }
+
+li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Information for the pros document */
+ #hiddenmessage {
+   color: LightGrey;
+   transition: color 2s;
+ }
+
+ #hiddenmessage:hover{
+   color: black;
+ }
+
+ .honest {
+   margin-left: 200px;
+   font-size: 30px;
+ }
+
+ .honestheader {
+   font-size: 40px;
+ }
