@@ -157,6 +157,18 @@ li {
   padding-bottom: 5px;
 }
 
+.imgslideshow {
+  position:relative;
+  float: right;
+}
+
+.slideshow {
+  display: none;
+}
+
+
+
+
 /* Information for the pros document */
  #hiddenmessage {
    color: LightGrey;

@@ -42,7 +42,48 @@
 <p> <br><br><br><br><br>
 <center><h2>Cybercrime</h2></center>
 While it may benefit online users, anonymity makes the FBI's job much harder. <br>
-<img id="cyberimg"height="250px" width="300px" src="hackers.jpg" alt="A mysterious person hacking a computer">
+
+<div class="imgslideshow">
+
+  <div class="slideshow">
+    <img height="250px" width="300px" src="hackers.jpg" alt="A mysterious person hacking a computer">
+  </div>
+
+  <div class="slideshow">
+    <img height="250px" width="300px" src="stranger.jpg" alt="A mysterious person hacking a computer">
+  </div>
+
+  <div class="slideshow">
+    <img height="250px" width="300px" src="cybercrime.jpg" alt="A mysterious person hacking a computer">
+  </div>
+</div>
+
+<script language="Javascript">
+  /*defines this variable, to be manipulated later. */
+  var slidestuff = 0;
+  /*Runs the function below*/
+  showSlide();
+
+  function showSlide() {
+    var r;
+    /*I am defining a new variable. It says get elements because there are multiple elements with this class,
+    and I am referring to them all. This gets them from the document. */
+    var slidegen = document.getElementsByClassName("slideshow");
+ /*The for loop works as follows: The first thing in the list will happen first, then the second thing will define
+ what is necessary for the content of the for loop to fire, and the third thing will keep happening until the second condition cannot be met anymore. */
+    for (r=0; r<slidegen.length; r++) {
+      slidegen[r].style.display = "none";
+}
+    slidestuff++;
+    if (slidestuff > slidegen.length) {slidestuff = 1}
+    slidegen[slidestuff-1].style.display = "block";
+/*The setTimeout function is the (function to be done, time in miliseconds)*/
+    setTimeout(showSlide, 3000);
+
+
+  }
+</script>
+
 <ul>
   <li>In 2006, the <strong>FBI cybercrime division was founded</strong></li>
   <li>Adults can use an anonymous username to appear as children online, luring real children into compromising situations</li>
