@@ -176,6 +176,44 @@ li {
   padding-top: 10px;
 }
 
+.cyberbully2 {
+  background-color: DarkGrey;
+  padding-bottom: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: -30px;
+  margin-right: -30px;
+  padding-top: 10px;
+}
+
+#byesister {
+  border-style: solid;
+  border-width: 5px;
+  border-color: DarkGrey;
+  float: right;
+  margin-top: -90px;
+}
+
+#screenshot {
+  float: left;
+  border-width: 5px;
+  border-color: DarkGrey;
+  float: left;
+  border-style: solid;
+}
+#screenshot2 {
+  float: right;
+  border-width: 5px;
+  border-color: DarkGrey;
+  border-style: solid;
+  margin-top: 0px;
+  margin-left: -400px;
+}
+
+.spacebelow {
+  margin-bottom: 200px;
+  margin-top: 50px;
+}
 /* Information for the pros document */
  #hiddenmessage {
    color: LightGrey;
