@@ -175,3 +175,41 @@ li {
  .honestheader {
    font-size: 40px;
  }
+
+ /* Information for the Quiz Document */
+
+ form span {
+   font-weight:bold;
+   font-size: 30px;
+ }
+
+ .contentdiv {
+   float: left;
+   display: block;
+   border-style: solid;
+   border-color: Black;
+   border-width: 4px;
+   padding: 5px 25px;
+   background-color: white;
+}
+
+.contentdiv:hover {
+  background-color: LightBlue;
+}
+
+input[type=button] {
+  width: 40%;
+  text-align: center;
+  background-color: white;
+  color: SeaGreen;
+  font-family: serif;
+  font-size: 30px;
+  border-radius: 8px;
+  display: block;
+  margin-left: 10%;
+  margin-right: 60%;
+}
+
+#answerfinal {
+  visibility: hidden;
+}

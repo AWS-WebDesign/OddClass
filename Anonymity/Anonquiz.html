@@ -19,5 +19,182 @@
       <span><a href="./Anonquiz.html">Quiz</a></span>
     </div>
   </body>
+  <div class="anonmain">
+      <div class="anoncontent">
+    <h2>Anonymity Quiz!</h2>
+    <p>This quiz was built to test how well you payed attention to our details, and also how much you know about
+    anonymity and privacy online!</p>
+    <form method="post">
+
+      <div class="qdiv">
+        <span id="formq">Anonymity allows people to be mallicious online. What percent of teens are cyberbullied?</span><br>
+        <div class="contentdiv">
+          <label for="25cyber">25%</label>
+          <input id="25cyber" type="checkbox">
+        </div>
+
+        <div class="contentdiv">
+          <label for="63cyber">63%</label>
+          <input id="83cyber" type="checkbox">
+        </div>
+
+        <div class="contentdiv">
+          <label for="37cyber">37%</label>
+          <input id="37cyber" type="checkbox">
+          </div>
+
+        <div class="contentdiv">
+          <label for="29cyber">29%</label>
+          <input id="29cyber" type="checkbox">
+        </div>
+      </div><br><br> <br>
+
+      <div class="qdiv">
+          <span id="formq"> People like to stay hidden online. What percent of internet users think they have too much information about
+          themselves shared online?</span><br>
+
+          <div class="contentdiv">
+          <label for="25info">25%</label>
+          <input id="25info" type="checkbox"><br>
+          </div>
+
+          <div class="contentdiv">
+          <label for="35info">35%</label>
+          <input id="35info" type="checkbox"><br>
+          </div>
+
+          <div class="contentdiv">
+          <label for="50info">50%</label>
+          <input id="50info" type="checkbox"><br>
+          </div>
+
+          <div class="contentdiv">
+          <label for="75info">75%</label>
+          <input id="75info" type="checkbox"><br>
+          </div>
+      </div><br> <br> <br>
+
+      <div class="qdiv">
+          <span id="formq">Anonymity is all about hiding personal information about an internet user. What online information are internet
+          users most concerned with keeping private? </span> <br>
+          <div class="contentdiv">
+          <label for="emailpriv">Email content</label>
+          <input id="emailpriv" type="checkbox"><br>
+          </div>
+
+          <div class="contentdiv">
+          <label for="searchpriv">Search history</label>
+          <input id="searchpriv" type="checkbox"><br>
+          </div>
+
+          <div class="contentdiv">
+          <label for="locatepriv">Location while using internet</label>
+          <input id="locatepriv" type="checkbox"><br>
+          </div>
+
+          <div class="contentdiv">
+          <label for="chatspriv">Content of online chats</label>
+          <input id="chatspriv" type="checkbox"><br>
+          </div>
+
+      </div><br> <br> <br>
+
+      <div class="qdiv">
+
+          <span id="formq">Hackers and other bad guys can use anonymity to hide behind the screen. When was the FBI's cybercrime division founded?</span><br>
+
+          <div class="contentdiv">
+          <label for="10crime">2010</label>
+          <input id="10crime" type="checkbox"><br>
+          </div>
+
+          <div class="contentdiv">
+          <label for="02crime">2002</label>
+          <input id="02crime" type="checkbox"><br>
+          </div>
+
+          <div class="contentdiv">
+          <label for="95crime">1995</label>
+          <input id="95crime" type="checkbox"><br>
+          </div>
+
+          <div class="contentdiv">
+          <label for="06crime">2006</label>
+          <input id="06crime" type="checkbox"><br>
+          </div>
+      </div><br> <br> <br>
+
+      <div class="qdiv">
+
+          <span id="formq">Anonymous sites like Reddit connects users to communities with similar interests to them. As of 2015, how many subreddits were there?</span><br>
+          <div class="contentdiv">
+          <label for="520red">520,000</label>
+          <input id="520red" type="checkbox"><br>
+          </div>
+
+          <div class="contentdiv">
+          <label for="370red">370,000</label>
+          <input id="370red" type="checkbox"><br>
+          </div>
+
+          <div class="contentdiv">
+          <label for="640red">640,000</label>
+          <input id="640red" type="checkbox"><br>
+          </div>
+
+          <div class="contentdiv">
+          <label for="710red">710,000</label>
+          <input id="710red" type="checkbox"><br>
+          </div>
+        </div><br> <br> <br>
+      <input id="submit" type="button" onclick="anonQuiz();" value="Submit Answer">
+
+    </form>
+<br>
+    <div id="answerfinal">
+      <p>
+        You are <span id="percentright"></span>% right! <br>
+        <span id="resetpage"><a href="./Anonquiz.html">Reset page</a></span>
+      </p>
+    </div>
+  </div>
+    </div>
+<!--Below is the javascript for the quiz document!-->
+    <script language="Javascript">
+      function anonQuiz() {
+
+      var right = 0;
+
+      if (document.getElementById("37cyber").checked) {
+        right = right+20;
+      }
+
+      if (document.getElementById("50info").checked) {
+        right = right+20;
+      }
+
+      if (document.getElementById("emailpriv").checked) {
+        right = right+20;
+      }
+
+      if (document.getElementById("06crime").checked) {
+        right = right+20;
+      }
+
+      if (document.getElementById("640red").checked) {
+        right = right+20;
+      }
+
+      right.toString();
+
+      document.getElementById("percentright").innerHTML =
+      right;
+
+      var answershow = document.getElementById("answerfinal");
+      answershow.style.visibility = "visible"
+    }
+
+
+    </script>
 
 </html>
