@@ -221,6 +221,9 @@ shows what to do with the input taken. In this case, it's made public. -->
 
 <!--This is the final answer that will appear after the quiz is submitted. -->
     <div id="answerfinal">
+        <!---Within this paragraph, it will say "you are x% right!" The x depends on
+      what the javascript outputs for 'percentright'. Right now, it is empty. The reset page
+    button will also appear after the quiz is submitted. It is a classic anchor within a span. -->
       <p>
         You are <span id="percentright"></span>% right! <br>
         <span id="resetpage"><a href="./Anonquiz.html">Reset page</a></span>
@@ -231,14 +234,20 @@ shows what to do with the input taken. In this case, it's made public. -->
       </body>
 <!--Below is the javascript for the quiz document!-->
     <script language="Javascript">
+    /*Everything within this document will run when the submit button is clicked. */
       function anonQuiz() {
 
+        /*Here I am defining this variable as 0. This variable will count the points the user has based off of their answers.  */
       var right = 0;
 
+      /*An if statement only works if the parameters in parentheses is met. document.getElementById applies to the element
+      with the specific id. So, since, 37cyber is the id of the right answer, if that is checked, then I want points to be added. Otherwise, I don't
+      want points to be added. So, if the input with the id of 37cyber is checked, then the old value of right will now be the old value of right with an additional
+      20 points. Essentially, 20 points will be added. */
       if (document.getElementById("37cyber").checked) {
         right = right+20;
       }
-
+/*The same as explained above is repeated here again for the other right answers. */
       if (document.getElementById("50info").checked) {
         right = right+20;
       }
@@ -254,16 +263,20 @@ shows what to do with the input taken. In this case, it's made public. -->
       if (document.getElementById("640red").checked) {
         right = right+20;
       }
-
+      /*This converts the value 'right', which is currently a number, to a string (or text). This way, it can be in a span or paragraph. */
       right.toString();
 
+      /*This code defines the element percentright, which before was an empty span, as the value for the variable 'right'.*/
       document.getElementById("percentright").innerHTML =
       right;
 
+      /*This defines a new variable, answershow. Answershow is equal to the content with the id of answerfinal. This is the content that was
+      originally hidden and is the content that says "you are x% right!". */
       var answershow = document.getElementById("answerfinal");
+      /*This makes it so that the variable answershow has a visibility of visible, when before it was hidden. Essentially, now the viewer can see it, along with
+      the results of the quiz. */
       answershow.style.visibility = "visible"
     }
-
 
     </script>
 
