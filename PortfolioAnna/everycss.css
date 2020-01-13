@@ -1,0 +1,331 @@
+
+/*Applies to the zero waste document*/
+.allportbarz {
+  background-color: Pink;
+  color: Lavender;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-bottom: -22px;
+  margin-top: -10px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-color: DarkGrey;
+  border-width: 8px;
+  display: block;
+
+}
+
+.allportbarz a {
+  text-decoration: none;
+  color: Lavender;
+  padding: 10px 5px;
+  margin-left: -5px;
+  margin-right: 20px;
+
+}
+
+.allportbarz span {
+  padding-left: 300px;
+}
+
+.allportbarz a:hover {
+  background-color: Lavender;
+  color: Black;
+}
+
+
+/*Applies to the Buzzfeed quiz document, as well as the ornaments documents*/
+
+.allportbarb {
+  background-color: Pink;
+  color: Lavender;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-bottom: -22px;
+  margin-top: -10px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-color: DarkGrey;
+  border-width: 8px;
+  display: block;
+  font-family: none;
+  margin-left: -10px;
+  margin-bottom: 10px;
+}
+
+.allportbarb a {
+  text-decoration: none;
+  color: Lavender;
+  padding: 10px 5px;
+  margin-left: -5px;
+  margin-right: 20px;
+  font-family: sans-serif;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: Pink;
+
+
+}
+.allportbarb span {
+  padding-left: 400px;
+  font-family: sans-serif;
+}
+
+.allportbarb a:hover {
+  background-color: Lavender;
+  color: Black;
+}
+/*Applies to the fall project*/
+
+/*For Mainfall.html*/
+
+
+.allportbarmf {
+  background-color: Pink;
+  color: Lavender;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  padding: 10px 5px;
+  padding-bottom: 10px;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-color: DarkGrey;
+  border-width: 8px;
+  display: block;
+  font-family: none;
+  margin-left: -3px;
+  margin-right: -3px;
+  margin-bottom: 0px;
+}
+
+.allportbarmf a {
+  text-decoration: none;
+  color: Lavender;
+  padding: 10px 5px;
+  margin-left: -5px;
+  margin-right: 20px;
+  font-family: sans-serif;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+
+}
+.allportbarmf span {
+  padding-left: 400px;
+  font-family: sans-serif;
+}
+
+.allportbarmf a:hover {
+  background-color: Lavender;
+  color: Black;
+}
+
+/*For Fallfood.html*/
+
+
+.allportbarmff {
+  background-color: Pink;
+  color: Lavender;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  padding: 10px 5px;
+  padding-bottom: 10px;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-color: DarkGrey;
+  border-width: 8px;
+  display: block;
+  font-family: none;
+  margin-left: 0px;
+  margin-right: -6px;
+  margin-bottom: 0px;
+}
+
+.allportbarmff a {
+  text-decoration: none;
+  color: Lavender;
+  padding: 10px 5px;
+  margin-left: -5px;
+  margin-right: 20px;
+  font-family: sans-serif;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+
+}
+.allportbarmff span {
+  padding-left: 400px;
+  font-family: sans-serif;
+}
+
+.allportbarmff a:hover {
+  background-color: Lavender;
+  color: Black;
+}
+
+/*Example code for top bar:
+
+<div class="allportbarb">
+  <a href="./Mainport.html">Back</a>
+  <span>Project Portfolio: Tacoma's Guide to Fall</span>
+</div>
+
+*/
+
+/*Applies to the family tree documents*/
+
+
+.allportbarft {
+  background-color: Pink;
+  color: Lavender;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-bottom: -22px;
+  margin-top: -10px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-color: DarkGrey;
+  border-width: 8px;
+  display: block;
+  font-family: none;
+  margin-left: -10px;
+  margin-bottom: 10px;
+}
+
+.allportbarft a {
+  text-decoration: none;
+  color: Lavender;
+  padding: 10px 5px;
+  margin-left: -5px;
+  margin-right: 20px;
+  font-family: sans-serif;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+
+}
+.allportbarft span {
+  padding-left: 400px;
+  font-family: sans-serif;
+}
+
+.allportbarft a:hover {
+  background-color: Lavender;
+  color: Black;
+}
+
+/*Applies to the Bison document*/
+
+
+.allportbarbison {
+  background-color: Pink;
+  color: Lavender;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-bottom: -32px;
+  margin-top: -10px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-color: DarkGrey;
+  border-width: 8px;
+  display: block;
+  font-family: none;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+.allportbarbison a {
+  text-decoration: none;
+  color: Lavender;
+  padding: 10px 5px;
+  margin-left: -5px;
+  margin-right: 20px;
+  font-family: sans-serif;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+
+}
+.allportbarbison span {
+  padding-left: 400px;
+  font-family: sans-serif;
+}
+
+.allportbarbison a:hover {
+  background-color: Lavender;
+  color: Black;
+}
+
+/*Applies to the anonymity documents*/
+
+
+.allportbara {
+  background-color: Pink;
+  color: Lavender;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-bottom: -22px;
+  margin-top: -10px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-color: DarkGrey;
+  border-width: 8px;
+  display: block;
+  font-family: none;
+  margin-left: -10px;
+  margin-bottom: 80px;
+  background-color: Pink;
+
+}
+
+.allportbara a {
+  text-decoration: none;
+  color: Lavender;
+  padding: 10px 5px;
+  margin-left: -5px;
+  margin-right: 20px;
+  font-family: sans-serif;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: Pink;
+
+
+}
+.allportbara span {
+  padding-left: 400px;
+  font-family: sans-serif;
+}
+
+.allportbara a:hover {
+  background-color: Lavender;
+  color: Black;
+}

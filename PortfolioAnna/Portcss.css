@@ -1,0 +1,71 @@
+/*This is my css document for my portfolio html. */
+
+.porttitle {
+  font-size: 60px;
+  text-align: center;
+  color: Lavender;
+  background-color: Pink;
+  font-family: sans-serif;
+  margin-top: -100px;
+  padding-top: 50px;
+  margin-right: -10px;
+}
+
+.portlinks {
+  /*change color to dark pink*/
+  background-color: Pink;
+  height: 60px;
+  margin-top: -85px;
+  width: 100.7%;
+  display: block;
+  overflow: hidden;
+}
+
+.portlinks a {
+  font-style: sans-serif;
+  float: left;
+  font-style: bold;
+  /*change color to dark lavender*/
+  color: Lavender;
+  font-size: 30px;
+  margin-top: 10px;
+  padding: 5px 2.615%;
+  border-color: LightGrey;
+  border-width: 2px;
+  border-style: solid;
+  padding: 5px 2.115%;
+
+}
+
+.portlinks a:hover {
+  background-color: Lavender;
+  color: Pink;
+}
+
+.main {
+  background-color: LightBlue;
+  margin-right: -10px;
+}
+
+#opening {
+  padding: 20px 30px;
+  margin-top: -2px;
+  color: DarkGrey;
+  font-style: sans-serif;
+  font-size: 22px;
+}
+
+#orgbar {
+  padding-left: 20px;
+  padding-right: 10px;
+  float: left;
+  padding-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: Black;
+}
+a:hover {
+  color: DarkGrey;
+}
