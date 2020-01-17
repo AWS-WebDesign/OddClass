@@ -9,6 +9,8 @@
   margin-top: -100px;
   padding-top: 50px;
   margin-right: -10px;
+  animation-name: portanim;
+  animation-duration: 4s;
 }
 
 .portlinks {
@@ -53,6 +55,49 @@
   color: DarkGrey;
   font-style: sans-serif;
   font-size: 22px;
+  animation-name: para1;
+  animation-duration: 4s;
+  opacity: 100%;
+}
+
+#anna {
+  color: Lavender;
+  animation-name: anna;
+  animation-duration: 3s;
+}
+
+#project {
+  color: Lavender;
+  animation-name: project;
+  animation-duration: 6s;
+}
+
+#history {
+  color: Lavender;
+  animation-name: history;
+  animation-duration: 9s;
+}
+/*Animations:*/
+
+@keyframes para1{
+0% {opacity:0%; color: LightBlue;}
+100% {opacity:100%; color: DarkGrey;}
+}
+
+@keyframes anna {
+  0% {color: Pink;}
+  100% {color: Lavender;}
+}
+
+@keyframes project {
+  0% {color: Pink;}
+  50% {color: Pink;}
+  100% {color: Lavender;}
+}
+@keyframes history {
+  0% {color: Pink;}
+  67% {color: Pink;}
+  100% {color: Lavender;}
 }
 
 #orgbar {
@@ -68,4 +113,63 @@ a {
 }
 a:hover {
   color: DarkGrey;
+}
+
+#famtreebar {
+  float: right;
+  border-style: solid;
+  border-width: 4px;
+  border-color: Lavender;
+  height: 112px;
+  width: 284px;
+  margin-right: 160px;
+  margin-top: -430px;
+}
+
+#famtreebartext {
+  float: right;
+  margin-right: 150px;
+  margin-top: -280px;
+  font-size: 24px;
+  width: 300px;
+}
+#famtreejames {
+  float: left;
+  border-style: solid;
+  border-width: 4px;
+  border-color: Lavender;
+  height: 149.4px;
+  width: 275.4px;
+  margin-top: -300px;
+  margin: 10px;
+}
+
+#familypara {
+  width: 300px;
+  height: 300px;
+  margin-left: 400px;
+  line-height: 30px;
+  padding-top: 10px;
+  font-size: 22px;
+}
+
+.inforight {
+  width: 800px;
+  display: block;
+  font-size: 22px;
+}
+
+.familytreediv {
+  padding-bottom: -100px;
+  margin-bottom: -100px;
+}
+
+#bisonpic {
+  border-style: solid;
+  border-width: 4px;
+  border-color: Lavender;
+  padding-left: -10px;
+  float: right;
+  margin-right: 60px;
+  margin-top: -150px;
 }
