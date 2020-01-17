@@ -1,0 +1,99 @@
+.title {
+  color: magenta;
+  font-size: 50px;
+  text-align: center;
+  border-style: solid;
+  border-width: 5px;
+  border-color: blue;
+  background-color: Teal;
+  margin-top: -10px;
+}
+.buffmove {
+  animation-duration: 5s;
+  animation-name: boldjump;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  font-weight: bold;
+  position: relative;
+  background-color: cream;
+}
+
+@keyframes boldjump {
+  0% {font-size: 30;}
+  25% {font-size: 32;}
+  50% {font-size: 34;}
+  75% {font-size: 32;}
+  100% {font-size: 30;}
+}
+.overall {
+  background-color: DarkSalmon;
+  margin-left: -10px;
+}
+
+.bisonstyle {
+  background-color: DarkSalmon;
+  font-size: 40px;
+  color: blue;
+}
+
+.hoverbison1 {
+  transition: background-color 4s;
+}
+
+.hoverbison2 {
+  transition: background-color 4s;
+}
+
+.hoverbison1:hover {
+  background-color: Salmon;
+}
+
+.hoverbison2:hover {
+  background-color: Salmon;
+}
+
+/*For portfolio project*/
+
+
+.allportbarbison {
+  background-color: Pink;
+  color: Lavender;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-bottom: -32px;
+  margin-top: -10px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-color: DarkGrey;
+  border-width: 8px;
+  display: block;
+  font-family: none;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+.allportbarbison a {
+  text-decoration: none;
+  color: Lavender;
+  padding: 10px 5px;
+  margin-left: -5px;
+  margin-right: 20px;
+  font-family: sans-serif;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+
+}
+.allportbarbison span {
+  padding-left: 400px;
+  font-family: sans-serif;
+}
+
+.allportbarbison a:hover {
+  background-color: Lavender;
+  color: Black;
+}
