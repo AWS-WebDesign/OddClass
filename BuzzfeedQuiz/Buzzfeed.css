@@ -1,0 +1,234 @@
+/*My css for the buzzfeed quiz. All of the files within here style the buzzfeed quiz.*/
+
+/*This gives the body element, also known as the entire webpage, a dark sea green
+background color.*/
+body {
+  background-color: DarkSeaGreen;
+
+}
+/*This also applies to all body elements, giving them all a font family of 'fantasy.'*/
+span {
+  font-family: fantasy;
+}
+/*This applies to the id #titlebig. It is the main title that says 'which member of mystery inc are you?'.
+The font family is "Kavoon," which is a google font that is linked in the html page. The text-align: center
+makes the text centered. The border-style creates a border for the title, but i've made the top, left and right
+borders equal to none so that there's only a bottom border. This effectively just makes a line beneath the text.
+The line in this case will be white and 10 pixels thick, as specified in the code.*/
+#titlebig {
+  font-family: "Kavoon";
+  text-align: center;
+  border-style: double;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: white;
+  border-width: 10px;
+}
+/*This applies to the 'nameintro' id. I originally made this id only to apply to the question asking for the user's name,
+but I later decided to use it to style all of the quiz questions. However, the id is still called nameintro. This style
+simply makes the font-family, or the font type, "Kavoon," and it makes the font fairly big as it is for a question.*/
+#nameintro {
+  font-size: 18px;
+  font-family: "Kavoon";
+}
+/*This applies to all inputs that are text inputs. Essentially, it only applies to the first question asking for the user's name, in the place
+where the user would then fill it out.
+I made the width 30%, so its width is 30% of its possible browser space. The border will appear dotted as that is how the border-style
+is defined. The border will also be white and 6 pixels thick, as shown in the code. The margin-top just makes a little bit of space
+above the text box for styling. The padding makes the walls of the textbox 20 pixels away from the text. The font will be 20 pixels in size.
+The background of the text box will be DarkSeaGreen and the text color will be white. The font will be as the font type "Kavoon."*/
+input[type=text] {
+  margin-top: 10px;
+  width= 30%;
+  border-style: dotted;
+  border-color: white;
+  border-width: 6px;
+  padding: 20px;
+  font-size: 20px;
+  background-color: DarkSeaGreen;
+  color: white;
+  font-family: "Kavoon";
+}
+/*The 'focus' condition applies when the user clicks on the textbox when they fill it out. This applies, again, to only inputs that are
+text inputs, or essentially the first question asking for the user's name. When the user clicks on the text box and while they type in it,
+the border will change to a solid border from a dotted border, and the background color will change from Dark sea green to sea green.*/
+input[type=text]:focus {
+  border-style: solid;
+  background-color: SeaGreen;
+}
+/*This applies to the id 'finalanswer.' This is a very important id because it controls the styling for the
+text that shows up that tells the user which scooby doo character they are. The display is 'none' because this information
+will not show until the user completes the quiz and clicks 'submit.' The font of this box is 40 pixels in size, the font type is
+fantasy, and the text alignment is center, so the text will be centered. The border-style element creates a border around the text.
+The border-style is double so the text will be surrounded by double lines. The border will be 10 pixels thick and white. The background color
+will be sea green. The padding as 100 means that there is 100 pixels of space between the text and the border. */
+#Finalanswer {
+  display: none;
+  font-size: 40px;
+  font-family: fantasy;
+  text-align: center;
+  border-style: double;
+  border-width: 10px;
+  border-color: white;
+  background-color: SeaGreen;
+  padding: 100px;
+}
+/*This applies to all elements with the style 'scoobydiv'. This style is applied in the html
+to all of the clickable answers. They are floated left so that all of the answer boxes line up
+next to each other evenly. The margin is 5 px to make space around each answer. There is a border,
+as shown by the border-style. In this case, the border is solid, white, and 3 pixels wide. The padding
+controls make it so that there is one pixel of space on the top, left and right of everything within the style.
+I made it so that the border doesn't cut off the images at all.*/
+.scoobydiv {
+  float: left;
+  margin: 5px;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  padding-top: 1px;
+  padding-left: 1px;
+  padding-right: 1px;
+
+}
+/*This applies to when the user is hovering over elements with the style 'scoobydiv'.
+This can be seen by the condition 'hover'. When the user hovers over any element that is
+styled 'scoobydiv', the border will become thicker and there will be more space around the element.*/
+.scoobydiv:hover {
+  border-width: 7px;
+  margin: 7px;
+}
+/*This applies to inputs that are 'button' types. This means it'll apply to the submit button
+which is a 'button' type. The submit button will have a width that is 40% of the page, it's text will be centered.
+The background will be white and the text color will be sea green. The font style will be 'kavoon' and the font will be 30 pixels in size.
+The border radius is 8 which means that the corners will be fairly rounded. The higher the border radius number, the rounder the corners.
+The display is a 'block', which is important to define it as a block so that I can later define the display as 'none' and make it dissapear.
+The display of block just makes the entire thing act like a block- it doesn't do much. The margin-left and margin-right are both 30%, as since
+the width is 40%, this adds to 100%. Basically, 30% of the page will always be space on the left, and another 30% will be space on the right
+of the submit button. I used this to essentially keep the button always centered, because the text-align control does not apply to the entire
+element. */
+input[type=button] {
+  width: 40%;
+  text-align: center;
+  background-color: white;
+  color: SeaGreen;
+  font-family: "Kavoon";
+  font-size: 30px;
+  border-radius: 8px;
+  display: block;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+/*This applies to the input type button, so that when this input type is hovered over, the submit button will appear
+as having a beige background color and a text color of dark sea green. */
+input[type=button]:hover {
+  background-color: beige;
+  color: DarkSeaGreen;
+}
+/*The three styles down below apply to the divs around each individual question. I created them to add top and bottom
+spacing between the questions so that they are not bunched up or do not overlap in any way. I used the margin-top and margin-bottom
+styles to do this. */
+.q1 {
+  margin-bottom: 150px;
+}
+
+.q2 {
+  margin-bottom: 200px;
+}
+.q3 {
+  margin-bottom: 200px;
+  margin-top: 20px;
+}
+
+.q4 {
+  margin-bottom: 280px;
+}
+.q5 {
+  margin-bottom: 280px;
+}
+/*This applies to all anchors (a), or hyperlinks, within the document. The text-decoration of hyperlinks is usually
+underlined, but by making the text-decoration:none, it gets rid of the underline and any other text decorations (like crossthroughs) it
+may have had. The text color is white and the font is 15 pixels in size. */
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 15;
+}
+/*This applies so that when the user hovers over the anchor element, the anchor turns grey. */
+a:hover {
+  color: grey;
+}
+/*This applies to the id 'resetbutton', which is a button that I programmed to appear after the submit button is clicked.
+By setting the visibility as hidden, the user will not be able to see the element, but there will be space for it.
+The elements of 'resetbutton' will have text that is in the font-family 'kavoon'.*/
+#resetbutton {
+  visibility: hidden;
+  font-family: "Kavoon";
+}
+/*This applies to the style 'resetspecs', more specifically, the anchors (a) with the style 'resetspecs'.
+The anchors of this style will be black and will have a font-size of 40 pixels. Note that the previous conditions for 'anchor'
+like text decoration still apply to this anchor even though it has different and sometimes contradictory values. Note that these
+values override any contradictory anchor values. */
+.resetspecs a {
+  color: black;
+  font-size: 40px;
+}
+/*This applies when the elements with the style 'resetspecs' that are anchors are hovered over. This relates to the reset button.
+When these elements are hovered over, they will turn grey. */
+.resetspecs a:hover {
+  color: grey;
+}
+
+
+.allportbarb {
+  background-color: Pink;
+  color: Lavender;
+  font-family: sans-serif;
+  margin-bottom: -22px;
+  margin-top: -10px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-color: DarkGrey;
+  border-width: 8px;
+  display: block;
+  font-family: none;
+  margin-left: -10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 45px;
+  font-size: 40px;
+  animation-name: barshow;
+  animation-duration: 3s;
+}
+@keyframes barshow {
+  0% {height: 1px; font-size: 0px; }
+  30% {height: 45px; font-size: 0px;}
+  100% {height: 45px; font-size: 40px;}
+}
+
+.allportbarb a {
+  text-decoration: none;
+  color: Lavender;
+  padding: 10px 5px;
+  margin-left: -5px;
+  margin-right: 20px;
+  font-family: sans-serif;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: Pink;
+
+
+}
+.allportbarb span {
+  padding-left: 250px;
+  font-family: sans-serif;
+}
+
+.allportbarb a:hover {
+  background-color: Lavender;
+  color: Black;
+}
