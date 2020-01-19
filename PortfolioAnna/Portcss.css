@@ -1,7 +1,7 @@
 /*This is my css document for my portfolio html. */
 
 .porttitle {
-  font-size: 60px;
+  font-size: 55px;
   text-align: center;
   color: Lavender;
   background-color: Pink;
@@ -20,7 +20,7 @@
   margin-top: -85px;
   width: 100.7%;
   display: block;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .portlinks a {
@@ -36,6 +36,8 @@
   border-width: 2px;
   border-style: solid;
   padding: 5px 2.115%;
+  overflow-x: hidden;
+  display: block;
 
 }
 
@@ -58,6 +60,11 @@
   animation-name: para1;
   animation-duration: 4s;
   opacity: 100%;
+  border-style: solid;
+  border-color: Lavender;
+  border-width: 7px;
+  border-left: none;
+  border-right: none;
 }
 
 #anna {
@@ -69,13 +76,13 @@
 #project {
   color: Lavender;
   animation-name: project;
-  animation-duration: 6s;
+  animation-duration: 4s;
 }
 
 #history {
   color: Lavender;
   animation-name: history;
-  animation-duration: 9s;
+  animation-duration: 5s;
 }
 /*Animations:*/
 
@@ -163,6 +170,18 @@ a:hover {
   padding-bottom: -100px;
   margin-bottom: -100px;
 }
+/*This makes it so that when the familytreediv is hovered over, the title turns underlined. Similar things are happening below.*/
+.familytreediv:hover .pagetitle{
+  text-decoration: underline;
+}
+
+.colorblock:hover .pagetitle{
+  text-decoration: underline;
+}
+
+.notcolorblock:hover .pagetitle{
+  text-decoration: underline;
+}
 
 #bisonpic {
   border-style: solid;
@@ -170,6 +189,145 @@ a:hover {
   border-color: Lavender;
   padding-left: -10px;
   float: right;
-  margin-right: 60px;
+  margin-right: 40px;
   margin-top: -150px;
+}
+
+#zeroportpic {
+  height: 106.4px;
+  width: 428px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: Lavender;
+  margin-top: 10px;
+}
+
+#toothvid {
+  border-style: solid;
+  border-width: 4px;
+  border-color: Lavender;
+  float: right;
+  margin-right: 300px;
+  margin-top: -240px;
+  margin-left: -200px;
+}
+
+#toothblurb {
+  float: right;
+  margin-right: 500px;
+  font-size: 25px;
+  padding-right: 0px;
+  margin-left: 0px;
+}
+
+.envirofun {
+  float: right;
+  margin-right: -220px;
+  font-size: 22px;
+  margin-top: -240px;
+}
+
+
+#fallguide {
+  width: 634px;
+  height: 153px;
+  margin: 10px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: Lavender;
+  margin-left: 0px;
+}
+
+
+#dropdowninfo {
+  float: right;
+  margin-right: 150px;
+  font-size: 20px;
+  margin-top: -100px;
+}
+
+#fallundrop {
+  float: right;
+  margin-top: -170px;
+  margin-right: 40px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: Lavender;
+}
+
+#falldrop {
+  float: right;
+  margin-top: -170px;
+  margin-right: 40px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: Lavender;
+  padding-bottom: -30px;
+}
+
+#cowimg {
+  float: right;
+  margin-top: -190px;
+  margin-right: 50px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: Lavender;
+}
+
+#firemanimg {
+  float: right;
+  margin-top: -190px;
+  margin-right: 50px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: Lavender;
+}
+
+#buzzimg {
+  float: right;
+  width: 448.21px;
+  height: 136.92px;
+  margin-right: -4px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: Lavender;
+  margin-top: -180px;
+}
+
+#maskshot {
+  border-style: solid;
+  border-width: 4px;
+  border-color: Lavender;
+  float: right;
+  margin-top: -180px;
+  margin-right: -230px;
+}
+
+.maskpara {
+  font-size: 20px;
+  float: right;
+  margin-right: -450px;
+  margin-top: -160px;
+  width: 200px;
+}
+/*This class is similar to the one that I used in my fall project to add variety to different sections of text. Essentially,
+every other block will have this div so that the background colors will vary project to project. */
+.colorblock {
+  background-color: DodgerBlue;
+  margin-left: -10px;
+  padding: 10px;
+  border-style: solid;
+  border-color: Lavender;
+  border-width: 7px;
+  border-left: none;
+  border-right: none;
+
+}
+
+.portinfo {
+  padding-left: 10px;
+}
+
+#spacebelow {
+  padding-bottom: 60px;
 }
