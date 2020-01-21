@@ -178,8 +178,11 @@ When these elements are hovered over, they will turn grey. */
 .resetspecs a:hover {
   color: grey;
 }
+/*Below applies to the portfolio project*/
 
-
+/*This applies to the pink portfolio bar at the top of the screen, which will be pink in the background with lavender text.
+It has a grey bar beneath it (as seen by the border styling) and it has some special margins and padding. It will be 45 pixels tall.
+It will fill up the width of the page (width: 100%). The font will be 40 pixels. The animation applied to it will be 3 seconds long and called barshow.  */
 .allportbarb {
   background-color: Pink;
   color: Lavender;
@@ -203,12 +206,15 @@ When these elements are hovered over, they will turn grey. */
   animation-name: barshow;
   animation-duration: 3s;
 }
+/*Here is the animation for the bar - its height will rapidly increase, and then the font will soon after
+increase until it is full size. */
 @keyframes barshow {
   0% {height: 1px; font-size: 0px; }
   30% {height: 45px; font-size: 0px;}
   100% {height: 45px; font-size: 40px;}
 }
-
+/*This applies to the link for the back button on the portfolio bar. It will not be underlined and will have some
+  special padding to help it fit. */
 .allportbarb a {
   text-decoration: none;
   color: Lavender;
@@ -223,11 +229,13 @@ When these elements are hovered over, they will turn grey. */
 
 
 }
+/*This applies to the text titled "Project Portfolio: Buzzfeed Quiz " The padding is to give it
+space from the back sign. */
 .allportbarb span {
   padding-left: 250px;
   font-family: sans-serif;
 }
-
+/*This means that when the back sign is hovered over, the background color will appear lavender and the text black. */
 .allportbarb a:hover {
   background-color: Lavender;
   color: Black;
