@@ -436,6 +436,20 @@ display so that it still takes up space on the page, it's just not visible. It w
 
 /*Added code for the portfolio project*/
 
+
+/*This applies to the bar at the top of all of the projects for the portfolio project.
+
+It makes the bar have a background color of pink and a text color of lavender.
+It makes the text in the bar 40 pixels and sans-serif. It also has some margin and padding specifications so that it is formatted nicely to the page.
+It has a border just shown on the bottom of it, and it appears as a grey line beneath the pink section.
+Some of the margins were changed later, so there's some repeat for what's defined as margin-bottom.
+The width is 100% so it fits to the whole screen, the height is defined as 45 px so that when it appears as an animation, there's
+a set height that it will move towards and stay at afterwards.
+
+There's an animation linked to it called barshow that lasts for 3 seconds.
+
+}
+*/
 .allportbara {
   background-color: Pink;
   color: Lavender;
@@ -455,20 +469,21 @@ display so that it still takes up space on the page, it's just not visible. It w
   margin-left: -10px;
   margin-right: -15px;
   margin-bottom: 80px;
-  background-color: Pink;
   width:100%;
   height: 45px;
   animation-name: barshow;
   animation-duration: 3s;
 
 }
-
+/*This applies to the animation linked above. Basically, it involves the pink bar dropping down into the screen
+and then the font appearing from being very small to 40 pixels. */
 @keyframes barshow {
   0% {height: 1px; font-size: 0px; }
   30% {height: 45px; font-size: 0px;}
   100% {height: 45px; font-size: 40px;}
 }
-
+/*This applies to the anchor of the bar, the 'back' button. It will not be underlined (text-decoration:none), it will be purple
+and have some margins and padding for a good fit, and the background color will be pink. */
 .allportbara a {
   text-decoration: none;
   color: Lavender;
@@ -483,11 +498,13 @@ display so that it still takes up space on the page, it's just not visible. It w
 
 
 }
+/*This applies to the span that says "Project Portfolio: Anonymity" The padding is so that it is not right next to the back button,
+but more in the center of the page. */
 .allportbara span {
   padding-left: 250px;
   font-family: sans-serif;
 }
-
+/*This means that when the 'back' tab is hovered over, it will turn lavender and the text will turn black. */
 .allportbara a:hover {
   background-color: Lavender;
   color: Black;
