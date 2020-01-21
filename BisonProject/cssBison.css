@@ -54,12 +54,13 @@
 
 /*For portfolio project*/
 
-
+/*This defines the styling for the pink bar at the top of the page. Everything here is pretty self explanatory.
+The bar will 45 pixels tall. Its animation, barshow, is below. It will appear as a pink-backgrounded lavender
+text bar at the top of the page with a grey border only beneath it. */
 .allportbarbison {
   background-color: Pink;
   color: Lavender;
   font-family: sans-serif;
-  font-size: 20px;
   margin-bottom: -32px;
   margin-top: -10px;
   padding: 10px 5px;
@@ -70,7 +71,6 @@
   border-color: DarkGrey;
   border-width: 8px;
   display: block;
-  font-family: none;
   margin-left: 0px;
   margin-bottom: 10px;
   width: 100%;
@@ -79,11 +79,15 @@
   animation-name: barshow;
   animation-duration: 3s;
 }
+/*Here is the animation for the bar - its height will rapidly increase, and then the font will soon after
+increase until it is full size. */
 @keyframes barshow {
   0% {height: 1px; font-size: 0px; }
   30% {height: 45px; font-size: 0px;}
   100% {height: 45px; font-size: 40px;}
 }
+  /*This applies to the link for the back button on the portfolio bar. It will not be underlined and will have some
+  special padding to help it fit. */
 .allportbarbison a {
   text-decoration: none;
   color: Lavender;
@@ -97,11 +101,13 @@
 
 
 }
+  /*This applies to the text titled "Project Portfolio: Animal Facts--Bison " The padding is to give it
+  space from the back sign. */
 .allportbarbison span {
   padding-left: 250px;
   font-family: sans-serif;
 }
-
+  /*This means that when the back sign is hovered over, the background color will appear lavender and the text black. */
 .allportbarbison a:hover {
   background-color: Lavender;
   color: Black;
