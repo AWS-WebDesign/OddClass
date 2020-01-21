@@ -1,5 +1,26 @@
 /*This is my css document for my portfolio html. */
 
+/*This is the styling for my title of my webpage. The . before the word porttitle means that I am referencing a class.
+
+In css, each attribute that I want to change is listed with a colon next to it and the
+change described after the colon with a semicolon at the end.
+
+So, for the title of my webpage (and for anything I assign the class porttitle to), the:
+font will be 55 pixels
+the text will be centered on the page
+the text color will be lavender
+the background color will be pink
+the font will be sans-serif (not pointy like times new roman)
+
+I then define the margins. Margins are the space outside of an element. Padding is the space inside an element.
+For some purposes, margin and padding seem to appear the same.
+So, the top of the element(s) with the class porttitle (which is the homepage saying Anna's Project History) will
+have 100 pixels less on it's top than it otherwise would. So, there's less space above the text. The padding top means that there will
+be 50 pixels of space between the text in the element and its borders. The margin-right set as negative basically means it will
+be scooted 10 pixels to the right. There will also be 10 pixels of space beneath it.
+
+Finally, the animation-name means that the animation that I apply to this will be called portanim, and it will last for 4 seconds
+starting from when the page is loaded as according to animation-duration . */
 .porttitle {
   font-size: 55px;
   text-align: center;
@@ -9,51 +30,84 @@
   margin-top: -100px;
   padding-top: 50px;
   margin-right: -10px;
+  padding-bottom: 10px;
   animation-name: portanim;
   animation-duration: 4s;
 }
-
+/*This applies to the linkbar at the top of the page. The entire bar is called portlinks.
+So, all of the links will have pink backgrounds, the bar (attribute height) will be 60 pixels (px),
+the bar will be 85 pixels closer to the top of the screen (i did this so that it lines up with the title),
+and I made the width 100% to fit to the page perfectly. The display of block basically makes it act like a block and means that
+the whole thing can be hovered over (not just the text) and it will highlight. The overflow-x of hidden means that the
+user cannot scroll to the right or left, where they would just find weird blank space. The overflow-y of hidden means that when the user
+squeezes the screen, the extra links will just dissapear instead of making a weird scroll bar it otherwise did. The float shifts it to the left,
+and the padding of 0 means that this will not have any extra padding.  */
 .portlinks {
-  /*change color to dark pink*/
   background-color: Pink;
   height: 60px;
   margin-top: -85px;
-  width: 100.7%;
+  width: 100.0%;
   display: block;
   overflow-x: hidden;
-}
-
-.portlinks a {
-  font-style: sans-serif;
+  overflow-y: hidden;
   float: left;
+  padding:0;
+}
+/*This applies to all of the anchors (a) of the linkbar. I redefined the font-family as sans-serif again (kind of just out of habit).
+It is 'floated' to the left, which means that it is essentially shifted to the left. Because of this, all of the elements will appear
+on the same line. The font-style attribute changes how the font appears, and in this case it will appear bold. The font color (color attribute)
+will be lavender and the font will be 30 pixels in size. There will be 10 pixels of space above it (margin-top).
+Each anchor will also have a border around the whole element:
+it will be light Light Grey
+it will be 2 px in Width
+it will be a solid border (as opposed to a dotted line border or a double border)
+
+The padding element, when written as it is, means that the top and bottom of each anchor will be 5 pixels, while the left and right of each
+will be 1.7% of the width of the whole page.
+The overflow x of hidden means that the user cannot scroll left or right (similar idea with overflow-y, but up or down when the screen gets compressed).
+The display of block essentially makes the entire element stay together, which is useful when it's being hovered over.  */
+.portlinks a {
+  font-family: sans-serif;
+  float:left;
   font-style: bold;
-  /*change color to dark lavender*/
   color: Lavender;
   font-size: 30px;
   margin-top: 10px;
-  padding: 5px 2.615%;
+  /*padding: 5px 2.615%;*/
   border-color: LightGrey;
   border-width: 2px;
   border-style: solid;
-  padding: 5px 2.115%;
+  /*padding: 5px 2.115%;*/
+  padding: 5px 1.7%;
   overflow-x: hidden;
+  overflow-y: hidden;
   display: block;
-
 }
+/*This means that when the anchors of the class portlinks are being hovered over, the below will happen to them:
+their background color will be lavender and their text color will be pink.
 
+The attributes of hover revert after the element is no longer being hovered over. */
 .portlinks a:hover {
   background-color: Lavender;
   color: Pink;
 }
-
+/*This applies to the main page. The attributes are pretty simple. */
 .main {
   background-color: LightBlue;
   margin-right: -10px;
 }
-
+/*This applies to the opening paragraph.
+#s are used to apply to ids rather than classes.
+ It will have some padding around it, it will have dark grey text,
+22 point font, and some other basic styling. There are, however, two things about this paragraph that are intersting:
+First of all, it has a regular lavender border, but I defined the border-left and border-right as none. This means that it
+will essentially just appear as a lavender bar atop and beneath the paragraph.
+Secondly, there is an animation attached to this paragraph (called para1, and it lasts 4 seconds), so that when the page is
+loaded, the text will fade in. This is why I defined the opacity as 100%, because in order to make it fade in, I need to alter the opacity
+and so I wanted to define it as a consistent 100% so it is readable when the animation ends. */
 #opening {
   padding: 20px 30px;
-  margin-top: -2px;
+  margin-top: -25px;
   color: DarkGrey;
   font-style: sans-serif;
   font-size: 22px;
@@ -66,19 +120,20 @@
   border-left: none;
   border-right: none;
 }
-
+/*This applies just to the span containing the word "Anna's" in the title. I just gave it a color and defined an animation for it so that it will
+fade in at a given time. */
 #anna {
   color: Lavender;
   animation-name: anna;
   animation-duration: 3s;
 }
-
+/*This is the class for the second word, project, which will fade in slightly after (hence its longer animation duration- it has to wait). */
 #project {
   color: Lavender;
   animation-name: project;
   animation-duration: 4s;
 }
-
+/*This is the class for the word History, which has the longest animation duration because it will go on the longest (I make it wait so that it fades in last).*/
 #history {
   color: Lavender;
   animation-name: history;
@@ -86,42 +141,55 @@
 }
 /*Animations:*/
 
+/*This applies to the first paragraph (see above). Basically, at 0% of the 4 seconds of animation time (the start), the paragraph will be invisible and
+the text will be light blue (matching the background). As the seconds go by, the text will fade into having an opacity of 100% (fully visible) and grey text.
+The @keyframes defines it as an animation. */
 @keyframes para1{
 0% {opacity:0%; color: LightBlue;}
 100% {opacity:100%; color: DarkGrey;}
 }
-
+/*For this animation, my name will start as the same color of the background, and then over the course of 3 seconds, will transition to a visible
+Lavender color, essentially fading in. */
 @keyframes anna {
   0% {color: Pink;}
   100% {color: Lavender;}
 }
-
+/*Here, I defined the color as pink for the first 50% of the animation (about 2 seconds - it will wait 2 seconds before beginning to change colors), and then in
+the last 50% it will transition to lavender. */
 @keyframes project {
   0% {color: Pink;}
   50% {color: Pink;}
   100% {color: Lavender;}
 }
+/*Here, the color will be pink for the first 67% of the animation (just over 3 seconds) and then it will begin the transition to lavender. */
 @keyframes history {
   0% {color: Pink;}
   67% {color: Pink;}
   100% {color: Lavender;}
 }
-
+/*
 #orgbar {
   padding-left: 20px;
   padding-right: 10px;
   float: left;
   padding-top: 20px;
 }
-
+*/
+/*This applies to all anchors, or links, unless they have a style that overrides this. This means that they will have no text decoration (they default as underlined, so that goes away). The text will also be
+black. */
 a {
   text-decoration: none;
   color: Black;
 }
+/*When any anchor is hovered over, the text color will temporarily turn dark grey. */
 a:hover {
   color: DarkGrey;
 }
-
+/*this applies to an image within the family tree section which will appear as a screenshot of a linkbar from that project.
+It will be shifted to the right of the screen. As you will notice, all images have a 4 pixel lavender border, so I'm not going
+to mention that every time because this is a consistent styling throughout.
+The height and width I found by dividing the original height and width of the screenshot by a constant so that the dimensions stay in tact
+and it doesn't stretch strangely. I gave it some margin styling so that it isn't too close to other elements. */
 #famtreebar {
   float: right;
   border-style: solid;
@@ -132,7 +200,9 @@ a:hover {
   margin-right: 160px;
   margin-top: -430px;
 }
-
+/*This applies to the text below that screenshot. Again, the margins are for spacing. Negative margins are totally legal, they just move the element
+in the opposite direction. Just like images and other elements, you can specify the width of a set of text, as I did here. I also made it slightly bigger
+to fill the space. */
 #famtreebartext {
   float: right;
   margin-right: 150px;
@@ -140,6 +210,8 @@ a:hover {
   font-size: 24px;
   width: 300px;
 }
+/*This is referencing the screenshot of the family tree webpage with an image of my brother james on it.
+It has similar styling as other images. */
 #famtreejames {
   float: left;
   border-style: solid;
@@ -150,7 +222,8 @@ a:hover {
   margin-top: -300px;
   margin: 10px;
 }
-
+/*This references the paragraph to the right of the image with james in it. The line-height attribute changes the spacing between each line.
+In this case, I made it slightly more spaced out. */
 #familypara {
   width: 300px;
   height: 300px;
@@ -159,13 +232,14 @@ a:hover {
   padding-top: 10px;
   font-size: 22px;
 }
-
+/*This class is used often to apply to the main paragraphs of each section. It has a set width (for unity) and a display of block, mainly so that it doesn't interact
+strangely with other elements (or overlap with them). Also, you can see the font is 22 pixels. */
 .inforight {
   width: 800px;
   display: block;
   font-size: 22px;
 }
-
+/*This applies just to the first section about the family tree. Apparently, there was a lot of extra spacing and so this div was made just to cancel that. */
 .familytreediv {
   padding-bottom: -100px;
   margin-bottom: -100px;
@@ -174,15 +248,16 @@ a:hover {
 .familytreediv:hover .pagetitle{
   text-decoration: underline;
 }
-
+/*When the sections with the colorblock class are hovered over, the elements with the class pagetitle will appear underlined - so basically
+all of the titles will appear underlined when you account for the next section of code below. */
 .colorblock:hover .pagetitle{
   text-decoration: underline;
 }
-
+/*I made this div for the sections that are not colorblocked so I could still make their titles have underlines.  */
 .notcolorblock:hover .pagetitle{
   text-decoration: underline;
 }
-
+/*This applies to the screenshot from the bison document. It has fairly basic styling. */
 #bisonpic {
   border-style: solid;
   border-width: 4px;
@@ -192,7 +267,8 @@ a:hover {
   margin-right: 40px;
   margin-top: -150px;
 }
-
+/*This references the screenshot from my environmental call to action webpage. It has basic styling. The height and width is weird because
+it was originally bigger, but I divided them by a constant. */
 #zeroportpic {
   height: 106.4px;
   width: 428px;
@@ -201,7 +277,7 @@ a:hover {
   border-color: Lavender;
   margin-top: 10px;
 }
-
+/*This is the styling for the toothpick video. As you can see, it is very very similar to other styling. */
 #toothvid {
   border-style: solid;
   border-width: 4px;
@@ -211,7 +287,8 @@ a:hover {
   margin-top: -240px;
   margin-left: -200px;
 }
-
+/*This is the styling for the blurb addressing the toothpick video. It has slightly larger font. The padding and margin are defined
+as 0 because I was toggling them to adjust it and settled on 0.  */
 #toothblurb {
   float: right;
   margin-right: 500px;
@@ -219,7 +296,8 @@ a:hover {
   padding-right: 0px;
   margin-left: 0px;
 }
-
+/*This is the class for the paragraph about my environmental call to action page that says it was a lot of fun.
+It is floated on the right (like other elements) and has some negative margins to get it into place. */
 .envirofun {
   float: right;
   margin-right: -220px;
@@ -227,7 +305,7 @@ a:hover {
   margin-top: -240px;
 }
 
-
+/*This applies to the screenshot of the fall top bar. It has some basic margin, width and height styling. */
 #fallguide {
   width: 634px;
   height: 153px;
@@ -238,14 +316,14 @@ a:hover {
   margin-left: 0px;
 }
 
-
+/*This applies to the paragraph talking about the dropdowns. */
 #dropdowninfo {
   float: right;
   margin-right: 150px;
   font-size: 20px;
   margin-top: -100px;
 }
-
+/*This applies to the screenshot of the fall dropdown bar when it is not being hovered over. It has basic styling. */
 #fallundrop {
   float: right;
   margin-top: -170px;
@@ -254,7 +332,7 @@ a:hover {
   border-width: 4px;
   border-color: Lavender;
 }
-
+/*This applies to the screenshot of the fall dropdown bar when it is being hovered over. It has basic styling. */
 #falldrop {
   float: right;
   margin-top: -170px;
@@ -264,7 +342,7 @@ a:hover {
   border-color: Lavender;
   padding-bottom: -30px;
 }
-
+/* this applies to the screenshot of the cow ornament. It has basic styling as addressed and explained above. */
 #cowimg {
   float: right;
   margin-top: -190px;
@@ -273,6 +351,8 @@ a:hover {
   border-width: 4px;
   border-color: Lavender;
 }
+/*This id applies to the fireman ornament on the section about my ornament collection. It has basic margin styling, the same
+lavender border and is shifted to the right of the screen. */
 
 #firemanimg {
   float: right;
@@ -282,18 +362,21 @@ a:hover {
   border-width: 4px;
   border-color: Lavender;
 }
+/*This id applies to the screenshot of the buzzfeed question. It appears in the section about my buzzfeed quiz.
 
+It is pretty basic. Unlike other ones, I did not give it a special height and width because I didn't think it would
+distort the image too much. */
 #buzzimg {
   float: right;
-  width: 448.21px;
-  height: 136.92px;
-  margin-right: -4px;
+  width: 400px;
+  height: 200px;
+  margin-right: 7px;
   border-style: solid;
   border-width: 4px;
   border-color: Lavender;
-  margin-top: -180px;
+  margin-top: -210px;
 }
-
+/*This refers to the screenshot of the mask in the anonymity section of the webpage. It has basic styling. */
 #maskshot {
   border-style: solid;
   border-width: 4px;
@@ -302,7 +385,7 @@ a:hover {
   margin-top: -180px;
   margin-right: -230px;
 }
-
+/*This applies to the paragraph about the mask on the far right of the screen. It, like other text sections above, has a specified width. */
 .maskpara {
   font-size: 20px;
   float: right;
@@ -311,7 +394,8 @@ a:hover {
   width: 200px;
 }
 /*This class is similar to the one that I used in my fall project to add variety to different sections of text. Essentially,
-every other block will have this div so that the background colors will vary project to project. */
+every other block will have this div so that the background colors will vary project to project. I found the color DodgerBlue on
+w3school's css color index.  */
 .colorblock {
   background-color: DodgerBlue;
   margin-left: -10px;
@@ -323,11 +407,11 @@ every other block will have this div so that the background colors will vary pro
   border-right: none;
 
 }
-
+/*This applies to all of the portfolio sections. It just adds a little space to the left for neatness. */
 .portinfo {
   padding-left: 10px;
 }
-
+/*This was just to give a little space below certain sections that were becoming crowded. */
 #spacebelow {
   padding-bottom: 60px;
 }

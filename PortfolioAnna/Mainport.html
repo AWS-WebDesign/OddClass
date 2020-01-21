@@ -1,22 +1,37 @@
-<!--Notes:
-
-- make an 'award' for each project that exists as a button and appears "onclick"
-
-- use some sort of art application to make a png of a black timeline to be on the left of the screen.
-
+<!-- Here is my main page for my portfolio web design project!
 -->
-
+<!--Here is all of the basic code that defines this document as an html document.-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!--Here is all of the meta data. You can see that there is a css document linked to this (href="Portcss.css" (href attribute describes what it links to)) that defines
+  all of the styling for this document. The title shows what will appear in the tab of the webpage, but not on the webpage itself. -->
     <meta charset="utf-8">
     <title>Anna's Project History</title>
     <link rel="stylesheet" href="Portcss.css">
   </head>
+  <!--The body element contains all of the content that will be visible on the webpage.-->
   <body>
+    <!--This class defines the big title labeled "Anna's Project History". It has special styling to augment its color
+  and also its size. -->
     <div class="porttitle">
+      <!--Each word of this title is a seperately id'd span so that I could apply special css styling to each. In this case,
+    there is a different animation applied to each word so that they fade onto the screen at different times. Ids are like classes,
+  which are basically ways of linking elements to their css stylings to give them unique properties and settings. Below is an h1, which
+is essentially just regular text that has been bolded and centered. A span is just a short line of text. -->
       <h1><span id="anna">Anna's</span><span id="project"> Project </span> <span id="history">History</span></h1>
     </div>
+    <!--Below is the navigation bar for my webpage. It contains links, or a (anchors) to all of my main projects. It will appear as one bar with hoverable
+  elements that, when clicked, will lead to the html pages listed. The white text is what it will appear like. Each anchor is inside a span, which I mainly did
+so that I could style the spans different than the anchors so the hoverable elements would be easy to make. All of the code before the html page in "" is
+telling the page how to navigate to each html document. For example, for the Family Tree webpage, the system will leave this folder (PortfolioAnna) as shown by
+the ".." and then it will go inside the folder "FamilyTreeFolder" and then it will access the document "me.html". The same process happens for each respective link below.
+
+The div has a special class used for styling, but divs are basically just used to organize and style large chunks of text.
+
+Inside the anchor (a), href is saying which file will be accessed when the element is clicked. The white text in >< is what will show up.
+
+The id is also for specific styling. -->
     <div class="portlinks">
       <span id="portlink"><a href="../FamilyTreeFolder/me.html">Family Tree</a></span>
       <span id="portlink"><a href="../BisonProject/Bison.html">Bison</a></span>
@@ -26,24 +41,34 @@
       <span id="portlink"><a href="../BuzzfeedQuiz/Buzzfeedquiz.html">Buzzfeed Quiz</a></span>
       <span id="portlink"><a href="../Anonymity/Anonhome.html">Anonymity</a></span>
     </div>
+    <!--This is the div for the main page. It has basic styling (like background color, font size, etc) for the whole page. -->
     <div class="main">
-      <!--Float this image on the left of the screen. -->
-    <!--  <img id="orgbar" width="50px" height="2400px" src="bar.png" alt="The long bar on the left of the screen">
--->
+      <!--This is the opening paragraph (p). Since it has an animation fading it in, I gave it a special id (opening) so I could adjust its
+    attributes. It will just appear as a paragraph at the top of the page.-->
       <p id="opening">Welcome to my portfolio of this semester's web design projects. This semester,
         we worked primarily with html and css. Since I was learning the coding languages as
       we created projects, the first projects are much more simplistic than the later ones. From
-    paragraphs and relative links, to complicated forms and animations, my development of skills
+    paragraphs and relative links to complicated forms and animations, my development of skills
   is very clear from my informative, yet simple, Bison document, to my Javascript-reliant Buzzfeed Quiz
 with interactive responses and hoverable elements. Below, you can access and learn about the processes
 behind each project, or just click the links above for quick access. </p>
-
+<!--This is another big div for all of my information blurbs about each project. -->
     <div class="portinfo">
+      <!--Here is the div for just the section about the family tree. It has a weird image format so I gave it its own div. Also, I made it so that when this whole
+    section is hovered over, the header will appear as underlined so the user will know it's a link. This is true for all of the below headers as I changed all of their
+  respective divs. -->
       <div class="familytreediv">
+        <!--Here's another header (h1) with class pagetitle so that it appears special (see css document). As you can see, it is also an anchor (a)
+      and so will be a clickable link. This one is also hoverable. You can see how me.html was accessed the same as it was above. -->
         <h1 class="pagetitle"><a href="../FamilyTreeFolder/me.html">Family Tree</a></h1>
+        <!--Here is my first paragraph. It is a simple paragraph, and only has a class so I could adjust its spacing. -->
         <p class="inforight">As one of the first projects of the year, the family tree project involved using hyperlinks to
           navigate between very basic webpages. This particular project included links to information about
           many of my family members.</p>
+          <!--This image (img) will appear as the image screenshotjames.png (src attribute says which image to use -- alt attribute shows the text
+          that will show up if the image doesn't load) which is a screenshot of one of my family tree pages. I gave it a border in
+        css so it will have a lavender border. There is a paragraph also, as well as another image with similar formatting, and yet another paragraph.
+      They all have their own ids so that I could change their padding and margins so they would be spaced correctly. -->
         <img id="famtreejames" src="screenshotjames.png" alt="A screenshot of one of the webpages">
         <p id="familypara">In the three documents, there is a picture and description of each of my siblings. You can find this on
         the above navigation bar under the name "Family Tree." Enjoy!</p>
@@ -51,47 +76,81 @@ behind each project, or just click the links above for quick access. </p>
         <p id="famtreebartext">Here is an example of the very basic navigation bar used. </p>
       </div>
 
+<!--Here is the div for the next section about a project. This section is about the Bison project. The div class colorblock is used a couple times because I decided
+that every other section will have a darker background color so that the overall webpage looks prettier. The id of spacebelow is pretty straightforward. It applies to a
+css function that puts more padding beneath the whole thing as a result of some spacing issues I had. -->
       <div class="colorblock" id="spacebelow">
+        <!--This header is basically laid out as before, but with the html document Bison.html. -->
         <h1 class="pagetitle"><a href="../BisonProject/Bison.html">Bison Project</a></h1>
+        <!--As you will notice, this div repeats in every section. This is because I gave every section a larger paragraph on the right of the screen so that, even though
+      a lot of the images and minor paragraphs were formatted differently, they still had some uniformity accross them. -->
         <div class="inforight">
           The Bison project consists of a single page explaining some basic facts about a certain animal. Each person chose an
           animal, and I chose Bison. The page is more advanced, including pictures, background colors, and more unique styling. There was
           no real css document related to it at this point, but I added one in so I could style the portfolio bar for this project. As part of our animations work, I added an animation to this project. Explore
           the webpage to find out what it is!
         </div>
-        <img id="bisonpic"src="bisonhabpicture.png" alt="A screenshot of some Bison facts" height="137.4" width="400">
+        <!--This image is a screenshot from the bison page. All of the media on this page was taken from my other projects, mainly in the form of screenshots like this. By the way, the .png just defines
+      the image as a png image (as apposed to a jpg or other).-->
+        <img id="bisonpic" src="bisonhabpicture.png" alt="A screenshot of some Bison facts" height="137.4" width="400">
       </div>
+<!--This is a line break (br). It is essentially like the return tab in element form. I use it for spacing between sections when the spacing gets off. -->
       <br>
-
+<!--I made the div notcolorblock to be used on the sections that didn't have a special div but were also not colorblocked. I did this so that the title would
+still appear underlined when this section was hovered over. -->
       <div class="notcolorblock">
+        <!--You'll see the header looks about the same as before, with the link going to the document ZeroWaste.html. This is for the Environmental Call to Action project. -->
         <h1 class="pagetitle"><a href="../EnvironmentalCallToAction/ZeroWaste.html">Environmental Call to Action</a></h1>
+<!--This is the same content div mentioned before for the big paragraph under each section. I'm going to stop referencing this when it shows up, because it's consistent throughout. -->
         <div class="inforight">
           This webpage involved researching and presenting information about a certain environmental issue. I chose waste and zero waste
           lifestyles. It includes styling, but no css file. There are some cute pictures and a title, but this webpage is still not very
           advanced.
         </div>
+        <!--Below is an image and paragraph relating to the environmental call to action webpage. There's breaks in the middle of the span below so that it is returned in the middle
+      of the line. I did this for formatting purposes. They have specific ids so that I could change their margins and padding, or essentially their spacing.  -->
         <img id="zeroportpic" src="zeroportpic.png" alt="Screenshot from the environmental call to action doc">
         <p id="toothblurb">It even includes <br>a short video:</p>
-        <video id="toothvid" src="toothpickcopy.mp4" autoplay poster="Here is a toothpick dispenser in public" controls width= "150" height= "270">
+        <!--Below is a video. It works similarly to an image, with a src (source) attribute as well as some defined width and height. Width and height are css specifications, but I
+      often define these in the opening tags of images and videos because it is easier for me to locate, as I change them often as I create the webpage.
+
+    The autoplay attribute means that the video will start playing as soon as possible.
+    However, the controls attribute gives the video pause and play buttons, and so it will not play automatically.
+
+  It has an id because I gave it a border and changed some of its spacing.
+
+The white text "toothpick video" will show up if the browser does not support this video.  -->
+        <video id="toothvid" src="toothpickcopy.mp4" autoplay controls width= "150" height= "270">
           Toothpick video
         </video>
+        <!--Here is a paragraph - it has lots of line breaks for spacing purposes. It has a class so I could position it specifically, much like other paragraphs and
+      images on this page. -->
         <p class="envirofun">This webpage was a lot <br> of fun! It was one of <br> the first examples using <br> lists and multimedia. By <br>  this point, I was
         getting <br> much more comfortable <br> with my coding skills.</p>
 
       </div>
+      <!--Here's some more breaks for spacing between the two elements.-->
  <br><br> <br>
+ <!--Everything within this div applies to the section about my Fall Project. It has a class of colorblock and an id of spacebelow so that
+I could create space beneath it and so that the background color is a darker shade of blue. -->
       <div class="colorblock" id="spacebelow">
+<!--The header and div below are identical to the ones I've already described, except for the fact that the content is relating to the fall project. -->
         <h1 class="pagetitle"><a href="../FallProject/Mainfall.html">Fall Project</a></h1>
         <div class="inforight">
           My fall project is one that I am very proud of. By this point, I was using complex css styles including the hover and dropdown
           functions. It includes multiple webpages with interesting and well designed content. It is also one of my largest completed projects.
         </div>
+        <!--Here is a screenshot I took of the bar at the top of one of my fall pages. Below is also screenshots of my dropdown bar being hovered over and also when it is not hovered over.
+      There is a paragraph explaining this. All of these have their own ids so that I could space them specifically. -->
         <img id="fallguide" src="fallguide.png" alt="A screenshot of the fall top bar">
         <p id="dropdowninfo">On interesting feature is the <br> dropdown bar. Here is the <br> dropdown bar, both being <br> hovered over and when it is still. </p>
         <img id="fallundrop"height="173px" width="198px" src="fallundrop.png" alt="The fall dropdown bar not being hovered over.">
         <img id="falldrop" height="173px" width="199px" src="falldrop.png" alt="The fall dropdown bar being hovered over.">
       </div>
 <br><br>
+<!--All of the styling below is identical to what was explained before, except it applies to my ornaments collection project. As you will
+notice, this is one of the alternating un-colorblocked sections. It has two images that I floated (or shifted) to the right of the section. Many of the above elements
+have been floated to the left or right, and many have complicated margins and padding that I had to format by trial and error. -->
       <div class="notcolorblock">
         <h1 class="pagetitle"><a href="../FinishedCollectionProject/CHISTMAS.html">Ornament Collection Project</a></h1>
         <div class="inforight">
@@ -99,11 +158,13 @@ behind each project, or just click the links above for quick access. </p>
           includes four ornaments complete with matching songs and Youtube videos. In order to make it more fun, Cora and I were pretty goofy with our
           descriptions. The color selection is also very bright and bold. On the right are two ornaments featured in the collection.
         </div>
+        <!--These are two images of the ornaments that we talked about in our project. -->
         <img id="cowimg" width="204px" height="231.2px" src="cowimg.png" alt="An image of the cow ornament.">
         <img id="firemanimg" width="142.358px" height="231.2px" src="firemanimg.png" alt="An image of the fireman ornament.">
       </div>
-
+<!--Here are four breaks for four times the spacing. -->
 <br><br><br> <br>
+<!--Here is the section relating to my buzzfeed quiz. All of the formatting is identical to before. It is colorblocked (or darker blue). -->
       <div class="colorblock">
         <h1 class="pagetitle"><a href="../BuzzfeedQuiz/Buzzfeedquiz.html">Buzzfeed Quiz</a></h1>
         <div class="inforight">
@@ -113,9 +174,14 @@ behind each project, or just click the links above for quick access. </p>
           which was then incorporated into the answer. The answer has a visibility of 'hidden,' and only appears after the submit button is clicked.
           This is my most entertaining project.
         </div>
+        <!--This is a screenshot from one of the questions on the buzzfeed quiz.-->
         <img id="buzzimg" src="buzzfeedshot.png" alt="A screenshot of a question from my buzzfeed quiz">
       </div>
+<!--There are no breaks between these two sections because the spacing worked out to look alright without any. I really used the breaks for any areas that turned out
+tight because of any media like images or videos.
 
+The section below applies to my Anonymity document, my most reccent project. These sections are somewhat (from my memory at least) in chronological order, with the oldest being
+at the top of the page. The same order is kept in the search bar at the top of the page. -->
       <div class="notcolorblock">
         <h1 class="pagetitle"> <a href="../Anonymity/Anonhome.html">Anonymity </a></h1>
         <div class="inforight">
@@ -124,11 +190,13 @@ behind each project, or just click the links above for quick access. </p>
         was Anonymity, and my partner was Ananya. This project is the first of mine that uses animations and transitions, as seen by the mask that fades into words
         on the homepage. It also uses an audio file. The project has multiple pages, though a grey color scheme is consistent throughout.
         </p>
+        <!--Here is an image of the mask on the homepage of the anonymity page. On the right of it will appear the paragraph below. -->
         <img id="maskshot" width="219.23px" height="235.385px" src="maskshot.png" alt="The mask present on the home screen">
         <p class="maskpara">Here is the mask. As you will see on the webpage, this mask fades into some text. This was very difficult to maneuver and involved lots
         of trial and error to get everything to line up correctly.</p>
+        <!--These breaks are so that there's some extra spacing at the bottom of the page and it's not just white. -->
 <br><br><br>
-
+<!--Here are all of the closing tags for some greater divs and also for the body and html elements. -->
         </div>
       </div>
 
